@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    background: #ffffff;
+    list-style: none;
+}
+
+.bt-box{
+    display: inline-block;
+    width: 430px;
+    height: 578px;
+    background: #d5d6d8;
+}
+.gi-box{
+    display: block;
+    width: 588px;
+    height: 457px;
+    background: #d5d6d8;
+}
+
+.lmc-box{
+    display: inline-block;
+    width: 240px;
+    height: 240px;
+    background: #d5d6d8;
+}
+
+.cd-box{
+    display: block;
+    width: 792px;
+    height: 489px;
+    background: #d5d6d8;
+}
