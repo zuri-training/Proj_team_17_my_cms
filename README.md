@@ -1,4 +1,4 @@
-## Webmaker - CMS
+## Web-It - CMS
 
 ### Welcome to the repository of our Webmaker web application.
 
