@@ -7,8 +7,8 @@ This application is aimed at helping bloggers and companies with little or no kn
 
 ## Links to necessary docs for our first presentation
 
-[Link to our Presentation slides]()
-[Link to Google sheet of active members and assigned tasks](https://docs.google.com/spreadsheets/d/1OhgptYtAjZZTQdHJEXoNbr9gJol6QgNZnJPQheVJ6vI/edit?usp=sharing)
-[Link to our Figma file](https://www.figma.com/file/Uli9IZeFBp4ZlCe46ui6dI/CMS?node-id=244%3A131)
-[Link to our Documentation](https://docs.google.com/document/d/1QcRuKKh-H820re8t0NY9Rf9wGXVA_yY7LYIW_ivLpyY/edit?usp=sharing)
-[Link to our Database Schema](https://www.figma.com/file/Yc6wSiRK9RwBwcHFr8ZqcM/cms-schema?node-id=0%3A1T)
+- [Link to our Presentation slides]()
+- [Link to Google sheet of active members and assigned tasks](https://docs.google.com/spreadsheets/d/1OhgptYtAjZZTQdHJEXoNbr9gJol6QgNZnJPQheVJ6vI/edit?usp=sharing)
+- [Link to our Figma file](https://www.figma.com/file/Uli9IZeFBp4ZlCe46ui6dI/CMS?node-id=244%3A131)
+- [Link to our Documentation](https://docs.google.com/document/d/1QcRuKKh-H820re8t0NY9Rf9wGXVA_yY7LYIW_ivLpyY/edit?usp=sharing)
+- [Link to our Database Schema](https://www.figma.com/file/Yc6wSiRK9RwBwcHFr8ZqcM/cms-schema?node-id=0%3A1T)
