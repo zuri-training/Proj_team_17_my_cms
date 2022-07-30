@@ -6,36 +6,41 @@
 @tailwind utilities;
 
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
-    background: #ffffff;
+    /* background: #ffffff; */
     list-style: none;
 }
 
-.bt-box{
+.btn-color {
+    background: #C0C2C4;
+}
+
+.bt-box {
     display: inline-block;
     width: 430px;
     height: 578px;
     background: #d5d6d8;
 }
-.gi-box{
+
+.gi-box {
     display: block;
     width: 588px;
     height: 457px;
     background: #d5d6d8;
 }
 
-.lmc-box{
+.lmc-box {
     display: inline-block;
     width: 240px;
     height: 240px;
     background: #d5d6d8;
 }
 
-.cd-box{
+.cd-box {
     display: block;
     width: 792px;
     height: 489px;
