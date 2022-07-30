@@ -3,7 +3,7 @@ import vectorLogo from '../assets/Vector.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown, faBars } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
-import Button from './Button';
+import Button from '../Button';
 
 
 const NavigationBar = () => {
