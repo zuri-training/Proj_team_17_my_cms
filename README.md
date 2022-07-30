@@ -17,7 +17,7 @@ This application is aimed at helping bloggers and companies with little or no kn
 
 ### Introduction
 
-This markdown file contains all technical documentation related to the setup, deployment, update, and customization of our CMS web application. 
+This markdown file contains all technical documentation related to the setup, deployment, update, and customization of the Web-It web application. 
 
 ### Prerequisite 
 
