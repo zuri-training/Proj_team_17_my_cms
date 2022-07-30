@@ -39,7 +39,10 @@ const NavigationBar = () => {
                     <li className='py-1 px-3 mr-4'>
                         <Link to="/signin" className='font-medium text-sm lg:text-base not-italic cursor-pointer inline-flex'>Login In</Link>
                     </li>
-                    <Button name="Get Started" />
+                    
+                    <Link to="/create"><Button name="Get Started"/></Link>
+                    
+                    {/* <Button name="Get Started"  /> <Link to="/create"></Link> */}
                 </div>
             </ul>
         </div>

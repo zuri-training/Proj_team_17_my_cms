@@ -1,5 +1,7 @@
 import React from 'react';
 import Button from './Button';
+import { Link } from 'react-router-dom';
+
 
 const GetStarted = () => {
   return (
@@ -7,7 +9,7 @@ const GetStarted = () => {
         <div className='max-w-7xl my-0 mx-auto text-center flex flex-col items-center'>
             <h1 className='font-semibold xl:text-6xl lg:text-5xl text-4xl not-italic mb-8'>Best Website Solution For <br/> Content Creators</h1>
             <p className='font-medium lg:text-2xl text-xl mb-16'>Create your website and showcase your talents with ease</p>
-            <Button name="Get Started" />
+            <Link to="/create"><Button name="Get Started"/></Link>
         </div>
     </header>
   );
