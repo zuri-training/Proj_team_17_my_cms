@@ -6,38 +6,87 @@
 @tailwind utilities;
 
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
-    background: #ffffff;
+    /* background: #ffffff; */
     list-style: none;
 }
 
-.bt-box{
+.btn-color {
+    background: #C0C2C4;
+}
+
+.bt-box {
     display: inline-block;
     width: 430px;
     height: 578px;
     background: #d5d6d8;
 }
-.gi-box{
+
+.gi-box {
     display: block;
     width: 588px;
     height: 457px;
     background: #d5d6d8;
 }
 
-.lmc-box{
+.lmc-box {
     display: inline-block;
     width: 240px;
     height: 240px;
     background: #d5d6d8;
 }
 
-.cd-box{
+.cd-box {
     display: block;
     width: 792px;
     height: 489px;
     background: #d5d6d8;
+}
+
+/* Styles for Forgot Password Page */
+.first-col {
+    width: 720px;
+    height: 1024px;
+    background: #C0C2C4;
+}
+
+.second-col {
+    width: 720px;
+    height: 1024px;
+    background: #E5ECEE;
+}
+
+.content {
+    width: 481px;
+    height: 90%;
+}
+
+.texts {
+    width: 422px;
+}
+
+.texts h2 {
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.texts p {
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.input-color {
+    color: #C0C2C4;
+}
+
+.label-color {
+    color: #2B2C2E;
+}
+
+input {
+    border: 1px solid #D5D6D8;
 }
