@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 export default function TextInputGroup({
+  className,
     label,
     name,
     type,
@@ -11,22 +12,8 @@ export default function TextInputGroup({
 
   return (
     <div class="form-group mb-6">
-    <label htmlFor={name} class="form-label inline-block mb-2 text-gray-700">{label}</label>
-    <input type={type} className="form-control
-      block
-      w-full
-      px-3
-      py-1.5
-      text-base
-      font-normal
-      text-gray-700
-      bg-white bg-clip-padding
-      border border-solid border-gray-300
-      rounded
-      transition
-      ease-in-out
-      m-0
-    focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" 
+    <label htmlFor={name} className='text-sm label-color'>{label}</label>
+    <input type={type} className={className}
     placeholder={placeholder}
     value={value} 
     />
@@ -35,10 +22,12 @@ export default function TextInputGroup({
 }
 
     TextInputGroup.propTypes = {
+        name: PropTypes.string,
         label: PropTypes.string.isRequired,
         type: PropTypes.string.isRequired,
         value: PropTypes.string,
         placeholder: PropTypes.string.isRequired,
+        className: PropTypes.string.isRequired
     }
 
     TextInputGroup.defaultProps = {

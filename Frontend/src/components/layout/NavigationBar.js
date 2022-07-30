@@ -1,9 +1,9 @@
 import React from 'react';
-import vectorLogo from '../assets/Vector.png';
+import vectorLogo from '../../assets/Vector.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown, faBars } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
-import Button from '../Button';
+import Button from '../general/Button';
 
 
 const NavigationBar = () => {
@@ -38,6 +38,9 @@ const NavigationBar = () => {
                 <div className='inline-flex items-center'>
                     <li className='py-1 px-3 mr-4'>
                         <Link to="/signin" className='font-medium text-sm lg:text-base not-italic cursor-pointer inline-flex'>Login In</Link>
+                    </li>
+                    <li className='py-1 px-3 mr-4'>
+                        <Link to="/forgot" className='font-medium text-sm lg:text-base not-italic cursor-pointer inline-flex'>Forgot</Link>
                     </li>
                     <Button name="Get Started" />
                 </div>
