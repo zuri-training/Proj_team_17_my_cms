@@ -23,10 +23,10 @@ const ForgotPassword = () => {
                 <div className='flex flex-col w-full h-auto'>
                     <form >
                       <TextInputGroup
-                      label='Enter your email adress'
+                      label='Enter your email address'
                       placeholder='johndoe@example.com'
                       type='email'
-                      className='lg:p-4 p-3 w-full input outline-none'
+                      className='lg:p-3 p-2.5 w-full input outline-none'
                       />
                     </form>
                     <Button name='Send password recovery link'/>
