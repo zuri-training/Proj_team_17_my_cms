@@ -13,7 +13,7 @@ const SignUp = () => {
     setOpen(!open);
   };
   return (
-    <div className="he  flex">
+    <div className="h  flex">
       
      
       <div className="   w-1/2   ">
