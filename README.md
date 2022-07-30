@@ -14,3 +14,25 @@ This application is aimed at helping bloggers and companies with little or no kn
 - [Link to our Database Schema](https://www.figma.com/file/Yc6wSiRK9RwBwcHFr8ZqcM/cms-schema?node-id=0%3A1T)
 - [Link to our Presentation video](https://drive.google.com/file/d/1LUQruvH3ZXqwkxbltWtDIqWfstui_EBc/view?usp=sharing)
 - [Link to our Presentation slides](https://www.figma.com/file/Uli9IZeFBp4ZlCe46ui6dI/CMS?node-id=1000%3A2167)
+
+### Introduction
+
+This markdown file contains all technical documentation related to the setup, deployment, update, and customization of our CMS web application. 
+
+### Prerequisite 
+
+To install Web-It locally, you will need the following:
+- A computer running MacOS, Windows or Linux 
+- Python or pip to manage packages 
+- A supported version of Django 
+- A clean empty directory on your machine 
+
+### Setup and Installation
+
+The web application can be installed locally on a computer. The following installation guides will guide you step-by-step to create a new project and get it started.
+
+- Create and activate a virtual environment
+- Install Django - `pip install django`
+- Create the project folder - `django-admin startproject cmsproject`
+- Move into the project folder and create the app - `python manage.py startapp cmsapp`
+- Install the app in the settings.py file that is in the main project directory 
