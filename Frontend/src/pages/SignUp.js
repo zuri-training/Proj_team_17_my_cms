@@ -108,7 +108,7 @@ const SignUp = () => {
         
 <div className="flex items-center justify-center flex-col">
         <div className="pt-3">
-          <p>Already have an account? <a href="/">Log In</a></p>
+          <p>Already have an account? <a href="/signin">Log In</a></p>
         </div>
 
         <p className="mt-8 mb-8">OR</p>
