@@ -40,7 +40,7 @@ const NavigationBar = () => {
                 to="/signin"
                 className="font-medium text-sm lg:text-base not-italic cursor-pointer inline-flex"
               >
-                Login In
+                Login
               </Link>
             </li>
 
