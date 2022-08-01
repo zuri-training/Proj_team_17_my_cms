@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 export default function TextInputGroup({
-  className,
     label,
     name,
     type,
@@ -11,9 +10,9 @@ export default function TextInputGroup({
 }) {
 
   return (
-    <div class="form-group mb-6">
+    <div className="form-group mb-4">
     <label htmlFor={name} className='text-sm label-color'>{label}</label>
-    <input type={type} className={className}
+    <input name={name} type={type} className='lg:p-3 p-2.5 w-full input outline-none'
     placeholder={placeholder}
     value={value} 
     />
@@ -27,7 +26,6 @@ export default function TextInputGroup({
         type: PropTypes.string.isRequired,
         value: PropTypes.string,
         placeholder: PropTypes.string.isRequired,
-        className: PropTypes.string.isRequired
     }
 
     TextInputGroup.defaultProps = {

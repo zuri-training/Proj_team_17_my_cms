@@ -67,7 +67,7 @@
 .second-col {
     width: 720px;
     height: 1024px;
-    background: #E5ECEE;
+    background: #E6E7E7;
 }
 
 .content {
@@ -86,7 +86,7 @@
 
 .texts p {
     font-weight: 500;
-    margin: 20px 0;
+    margin: 13px 0 20px;
 }
 
 .input-color {
