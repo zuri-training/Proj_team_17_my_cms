@@ -25,8 +25,8 @@ const ForgotPassword = () => {
                       <TextInputGroup
                       label='Enter your email address'
                       placeholder='johndoe@example.com'
+                      name='email'
                       type='email'
-                      className='lg:p-3 p-2.5 w-full input outline-none'
                       />
                     </form>
                     <Button name='Send password recovery link'/>
