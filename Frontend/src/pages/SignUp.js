@@ -19,7 +19,7 @@ const SignUp = () => {
       <div className="   w-1/2   ">
         
           
-          <div className="text-center  mb-12 mt-10 font-semibold font-nunito text-5xl">
+          <div className="text-center  mb-12 mt-10 font-semibold  text-5xl">
               Sign Up
           </div>
         
@@ -30,7 +30,7 @@ const SignUp = () => {
           <div class="w-[481] mb-6 ">
             <label
               for="base-input"
-              className="font-nunito font-medium block mb-2 text-sm  text-black dark:text-gray-300"
+              className=" font-medium block mb-2 text-sm  text-black dark:text-gray-300"
             >
               Name
             </label>
@@ -45,7 +45,7 @@ const SignUp = () => {
           <div class="w-[481px] mb-6">
             <label
               for="base-input"
-              className="block mb-2 text-sm font-medium font-nunito text-black dark:text-gray-300"
+              className="block mb-2 text-sm font-medium  text-black dark:text-gray-300"
             >
               Username
             </label>
@@ -60,7 +60,7 @@ const SignUp = () => {
           <div class=" w-[481px] mb-6">
             <label
               for="base-input"
-              class="block mb-2 text-sm font-medium font-nunito text-black dark:text-gray-300"
+              class="block mb-2 text-sm font-medium  text-black dark:text-gray-300"
             >
               Email
             </label>
@@ -79,7 +79,7 @@ const SignUp = () => {
             <div className="w-full">
               <label
                 for="base-input"
-                className="block mb-2 text-sm font-medium font-nunito text-black dark:text-gray-300"
+                className="block mb-2 text-sm font-medium  text-black dark:text-gray-300"
               >
                 Password
               </label>
@@ -101,7 +101,7 @@ const SignUp = () => {
             </div>
           </div>
 
-          <button className="font-nunito font-semibold w-[481px] h-12 bg-gray-400 mt-6 flex items-center justify-center">
+          <button className=" font-semibold w-[481px] h-12 bg-gray-400 mt-6 flex items-center justify-center">
             Sign Up
           </button>
         </form>

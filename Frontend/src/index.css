@@ -47,16 +47,12 @@
     background: #d5d6d8;
 }
 
-.font-nunito {
-    font-family: 'Nunito', sans-serif;
-  }
-
-  .he {
+.he {
     min-height: 100vh;
-   
-  }
 
-  .t {
+}
+
+.t {
     float: left;
     text-align: justify;
-  }
+}
