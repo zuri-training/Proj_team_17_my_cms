@@ -56,3 +56,47 @@
     float: left;
     text-align: justify;
 }
+
+/* Styles for Forgot Password Page */
+.first-col {
+    width: 720px;
+    height: 1024px;
+    background: #C0C2C4;
+}
+
+.second-col {
+    width: 720px;
+    height: 1024px;
+    background: #E5ECEE;
+}
+
+.content {
+    width: 481px;
+    height: 90%;
+}
+
+.texts {
+    width: 422px;
+}
+
+.texts h2 {
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.texts p {
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.input-color {
+    color: #C0C2C4;
+}
+
+.label-color {
+    color: #2B2C2E;
+}
+
+input {
+    border: 1px solid #D5D6D8;
+}
