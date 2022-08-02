@@ -22,7 +22,7 @@ const Footer = () => {
                 <h4 className='font-bold text-xl not-italic pb-2 inline-flex'>Company</h4>
                 <Link to="/about-us"><p className='pb-1 inline-flex font-medium text-xl'>About Us</p></Link>
                 <Link to="/terms-of-service"><p className='pb-1 inline-flex font-medium text-xl'>Terms Of Service</p></Link>
-                <Link to="/"><p className='pb-1 inline-flex font-medium text-xl'>Privacy Policy</p></Link>
+                <Link to="/privacy-policy"><p className='pb-1 inline-flex font-medium text-xl'>Privacy Policy</p></Link>
             </div>
             <div className='mx-auto flex flex-col justify-start h-36 items-start'>
                 <h4 className='font-bold text-xl not-italic pb-2 inline-flex'>Socials</h4>

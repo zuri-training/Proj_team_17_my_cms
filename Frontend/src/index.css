@@ -47,16 +47,56 @@
     background: #d5d6d8;
 }
 
-.font-nunito {
-    font-family: 'Nunito', sans-serif;
-  }
-
-  .he {
+.he {
     min-height: 100vh;
-   
-  }
 
-  .t {
+}
+
+.t {
     float: left;
     text-align: justify;
-  }
+}
+
+/* Styles for Forgot Password Page */
+.first-col {
+    width: 720px;
+    height: 1024px;
+    background: #C0C2C4;
+}
+
+.second-col {
+    width: 720px;
+    height: 1024px;
+    background: #E6E7E7;
+}
+
+.content {
+    width: 481px;
+    height: 90%;
+}
+
+.texts {
+    width: 422px;
+}
+
+.texts h2 {
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.texts p {
+    font-weight: 500;
+    margin: 13px 0 20px;
+}
+
+.input-color {
+    color: #C0C2C4;
+}
+
+.label-color {
+    color: #2B2C2E;
+}
+
+input {
+    border: 1px solid #D5D6D8;
+}
