@@ -128,9 +128,10 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-<<<<<<< HEAD
+
+
 # dependencies
-node_modules
+node_modules/
 /.pnp
 .pnp.js
 
@@ -150,5 +151,3 @@ node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-=======
->>>>>>> 2cdd05f064be1a872eb7e8c4e3b3d9b0170e45fa
