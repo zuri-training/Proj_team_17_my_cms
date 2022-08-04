@@ -15,7 +15,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
     list-style: none;
+    font-family: var(--Nunito-font);
 }
 
 .btn-color {
