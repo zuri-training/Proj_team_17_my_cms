@@ -24,8 +24,9 @@
     font-family: var(--Arima-font);
 }
 
-.btn-color {
-    background: #C0C2C4;
+.btn-bg{
+    background: #402A2E;
+    color: #FFF;
 }
 
 .bt-box {
