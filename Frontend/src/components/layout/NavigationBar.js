@@ -37,10 +37,10 @@ const NavigationBar = () => {
 
                 <div className='inline-flex items-center'>
                     <li className='py-1 px-3 mr-4'>
-                        <Link to="/login" className='font-medium text-sm lg:text-base not-italic cursor-pointer inline-flex'>Login</Link>
+                        <a href="/login" className='font-medium text-sm lg:text-base not-italic cursor-pointer inline-flex'>Login</a>
                     </li>
                     
-                    <Link to="/signup"><Button name="Get Started"/></Link>
+                    <a href='/signup'><Button name="Get Started"/></a>
                 </div>
             </ul>
         </div>
