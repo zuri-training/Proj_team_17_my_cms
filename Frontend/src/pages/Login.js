@@ -72,7 +72,7 @@ const Login = () => {
                 </div>
               </div>
 
-              <button className=" font-semibold w-[481px] h-12 bg-gray-400 mt-6 flex items-center justify-center">Login</button>
+              <button className="btn-bg rounded-md font-semibold w-[481px] h-12 bg-gray-400 mt-6 flex items-center justify-center">Login</button>
 
               <div className="flex items-center justify-center flex-col">
                 <div className="pt-3">

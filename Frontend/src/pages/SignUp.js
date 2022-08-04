@@ -36,10 +36,10 @@ const SignUp = () => {
               />
             </div>
             <div className=" w-[481px] mb-6">
-              <label htmlFor="epassw-input" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Email</label>
+              <label htmlFor="email-input" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Email</label>
               <input
                 type="email"
-                id="epassw-input"
+                id="email-input"
                 placeholder="johndoe@example.com"
                 className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20 dark:placeholder-gray-400 dark:text-white " required
               />
@@ -67,7 +67,7 @@ const SignUp = () => {
               </div>
             </div>
 
-            <button type="submit" className=" font-semibold w-[481px] h-12 bg-gray-400 mt-6 flex items-center justify-center">Sign Up</button>
+            <button type="submit" className="btn-bg rounded-md font-semibold w-[481px] h-12 bg-gray-400 mt-6 flex items-center justify-center">Sign Up</button>
           </form>
         
           <div className="flex items-center justify-center flex-col">
