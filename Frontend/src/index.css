@@ -20,6 +20,10 @@
     font-family: var(--Nunito-font);
 }
 
+.arima-heading{
+    font-family: var(--Arima-font);
+}
+
 .btn-color {
     background: #C0C2C4;
 }
