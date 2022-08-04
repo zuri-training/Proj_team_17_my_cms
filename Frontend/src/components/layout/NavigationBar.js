@@ -9,7 +9,7 @@ import Button from '../general/Button';
 const NavigationBar = () => {
   return (
     <nav className='w-full pt-12 xl:px-0 px-5'>
-        <div className='max-w-7xl my-0 mx-auto w-auto flex items-center justify-between'>
+        <div className='max-w-6xl my-0 mx-auto w-auto flex items-center justify-between'>
             <div className='w-auto flex items-center'>
                 <Link to="/" className='cursor-pointer'>
                     <img  src={vectorLogo} alt="logo"/>
