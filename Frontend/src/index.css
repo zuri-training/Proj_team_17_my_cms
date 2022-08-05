@@ -83,3 +83,10 @@
 .color1 {
     color: #402A2E;
 }
+
+.resources-header {
+    background: linear-gradient(0deg, rgba(64, 42, 46, 0.53), rgba(64, 42, 46, 0.53)), url(assets/img/resources-bg.jpg), #F3E5E8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
