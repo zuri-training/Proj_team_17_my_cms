@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import browseTemp1 from '../../assets/img/browse-temp1-img.png'
 
 
 
@@ -14,8 +15,8 @@ const BrowseTemplates = () => {
                 </p>
                 <Link to='' className='font-semibold color1'>Browse Templates →</Link>
             </div>
-            <div className='flex'>
-                <span className='bt-box'></span>
+            <div>
+                <img src={browseTemp1} alt="browse template" className='browse-temp-img' />
             </div>
         </div>
     </section>

@@ -13,18 +13,18 @@ import '../index.css';
 
 const LandingPage = () => {
   return (
-    <>
-    <div className='header'>
-      <NavigationBar />
-      <GetStarted />
-    </div>
-      <BrowseTemplates />
-      <ViewInsights />
-      <LinkAccount />
-      <ChooseDomain />
-      <CreateWebsite />
-      <Footer />
-    </>
+    <main className='landingpage-bg'>
+      <div className='header'>
+        <NavigationBar />
+        <GetStarted />
+      </div>
+        <BrowseTemplates />
+        <ViewInsights />
+        <LinkAccount />
+        <ChooseDomain />
+        <CreateWebsite />
+        <Footer />
+    </main>
   );
 }
 

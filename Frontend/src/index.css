@@ -29,37 +29,34 @@
     color: #FFF;
 }
 
-
-
-
-
-.bt-box {
-    display: inline-block;
-    width: 430px;
-    height: 578px;
-    background: #d5d6d8;
+.landingpage-bg{
+    background: #F8F1F2;
 }
 
-.vi-box {
-    display: block;
-    width: 480px;
-    height: 457px;
-    background: #d5d6d8;
+
+
+
+
+.browse-temp-img{
+    width: 432px;
 }
 
-.lmc-box {
-    display: inline-block;
+.integration-img{
     width: 240px;
-    height: 240px;
-    background: #d5d6d8;
+    height: auto;
 }
 
-.cd-box {
-    display: block;
-    width: 792px;
-    height: 489px;
-    background: #d5d6d8;
+.viewInsights-img {
+    width: 550px;
+    height: auto;
 }
+
+.choosedomain-img {
+    width: 792px;
+    height: auto;
+}
+
+
 
 
 .he {
