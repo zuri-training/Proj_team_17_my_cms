@@ -90,3 +90,8 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+/* Login & Sign Up Styles */
+.session-bg {
+    background: #F8F1F2;
+}
