@@ -13,7 +13,7 @@ import '../index.css';
 
 const LandingPage = () => {
   return (
-    <main className='landingpage-bg'>
+    <main className='cms-bg'>
       <div className='header'>
         <NavigationBar />
         <GetStarted />
