@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import integration from '../../assets/img/integration-img.jpg';
 
 const LinkMyAccount = () => {
   return (
@@ -12,9 +13,8 @@ const LinkMyAccount = () => {
                 </p>
                 <Link to='' className='font-semibold color1'>Link Account →</Link>
             </div>
-            <div className='flex'>
-                <span className='lmc-box'></span>
-                <span className='lmc-box'></span>
+            <div>
+                <img src={integration} alt="integration" className='integration-img' />
             </div>
         </div>
     </section>
