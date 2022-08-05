@@ -20,4 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # include the urls pattern of the accounts app.
     path('', include('accounts.urls')),
+    # API endpoints
+    path('api/',include('accounts.urls'))
 ]
