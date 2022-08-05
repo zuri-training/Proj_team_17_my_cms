@@ -1,34 +1,32 @@
 import React, {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEyeSlash, faEye } from '@fortawesome/free-solid-svg-icons';
+import { faEyeSlash, faEye } from '@fortawesome/free-regular-svg-icons';
 
 const Login = () => {
-
-
   const [open, setOpen] = useState(false);
 
   const toggle = () => {
     setOpen(!open);
   };
+
   return (
     <>
       <div className='flex h-full'>
-        <div className='bg-gray-100 w-[50%] font-nunito '>
-          <div className='flex relative left-16 flex-col justify-center py-12 px-4 max-w-lg w-full'>
-            <h1 className='font-semibold text-5xl leading-[56px] text-[#000000]'>Log In</h1>
-            <form className="mt-12 space-y-6" action="#" method="POST">
+        <div className='w-1/2'>
+          <h1 className="text-center mb-12 mt-10 font-semibold overflow-hidden text-4xl">Login</h1>
+          <div className='flex items-center justify-center flex-col'>
+
+            <form action="submit" method="post">
               <input type="hidden" name="remember" defaultValue="true" />
               <div className="">
                 <div className='mb-8'>
-                  <label htmlFor="username" className="">
-                    Username
-                  </label>
+                  <label htmlFor="username" className="">Username</label>
                   <input
                     id="username"
                     name="username"
                     type="text"
                     required
-                    className="block w-full rounded-[4px] p-4 mt-3 border text-[#C0C2C4]"
+                    className="h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20  placeholder-gray-400 dark:text-white "
                     placeholder="johndoe"
                   />
                 </div>
@@ -42,10 +40,10 @@ const Login = () => {
                     type={open === false ? "password" : "text"}
                     autoComplete="current-password"
                     required
-                    className="block w-full rounded-[4px] p-4 mt-3 border text-[#C0C2C4]"
+                    className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20  placeholder-gray-400 dark:text-white "
                     placeholder="********"
                   />
-                  <span className='float-right relative -top-10 -left-4'>{open === false ? (
+                  <span className='float-right relative -top-9 -left-4'>{open === false ? (
                       <FontAwesomeIcon icon={faEye} onClick={toggle} />
                     ) : (
                       <FontAwesomeIcon icon={faEyeSlash} onClick={toggle} />
@@ -74,18 +72,11 @@ const Login = () => {
                 </div>
               </div>
 
-              <div>
-                <button
-                  type="submit"
-                  className="group relative w-full flex justify-center p-4 border border-transparent text-base font-semibold rounded text-[#414345] bg-[#C0C2C4] hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
-                >
-                  Log In
-                </button>
-              </div>
+              <button className="btn-bg rounded-md font-semibold w-[481px] h-12 bg-gray-400 mt-6 flex items-center justify-center">Login</button>
 
               <div className="flex items-center justify-center flex-col">
                 <div className="pt-3">
-                  <p>Don't have an account? <a href="/create">Sign Up</a></p>
+                  <p>Don't have an account? <a href="/signup">Sign Up</a></p>
                 </div>
 
                 <p className="mt-8 mb-8">OR</p>
@@ -102,11 +93,10 @@ const Login = () => {
                 </div>
               </div>
             </form>
-          </div>
-          
 
+          </div>
         </div>
-        <div className='bg-[#C0C2C4] w-[50%]'></div>
+        <div className='bg-gray-400 w-2/4  bg-uu'></div>
       </div>
     </>
   );

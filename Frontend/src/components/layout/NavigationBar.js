@@ -1,5 +1,5 @@
 import React from 'react';
-import vectorLogo from '../../assets/Vector.png';
+import vectorLogo from '../../assets/img/Vector.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown, faBars } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
@@ -9,7 +9,7 @@ import Button from '../general/Button';
 const NavigationBar = () => {
   return (
     <nav className='w-full pt-12 xl:px-0 px-5'>
-        <div className='max-w-7xl my-0 mx-auto w-auto flex items-center justify-between'>
+        <div className='max-w-6xl my-0 mx-auto w-auto flex items-center justify-between'>
             <div className='w-auto flex items-center'>
                 <Link to="/" className='cursor-pointer'>
                     <img  src={vectorLogo} alt="logo"/>
@@ -29,7 +29,12 @@ const NavigationBar = () => {
                     </div>
                     <div className='w-auto inline-flex items-center cursor-pointer'>
                         <li className='py-1 pr-3 lg:text-base text-sm not-italic font-medium'>
-                            Feature
+                            Templates
+                        </li>
+                    </div>
+                    <div className='w-auto inline-flex items-center cursor-pointer'>
+                        <li className='py-1 pl-3 lg:text-base text-sm not-italic font-medium'>
+                            Features
                         </li>
                         <FontAwesomeIcon icon={faCaretDown} />
                     </div>
@@ -37,10 +42,10 @@ const NavigationBar = () => {
 
                 <div className='inline-flex items-center'>
                     <li className='py-1 px-3 mr-4'>
-                        <Link to="/login" className='font-medium text-sm lg:text-base not-italic cursor-pointer inline-flex'>Login</Link>
+                        <a href="/login" className='font-medium text-sm lg:text-base not-italic cursor-pointer inline-flex'>Sign In</a>
                     </li>
                     
-                    <Link to="/signup"><Button name="Get Started"/></Link>
+                    <a href='/signup'><Button name="Get Started"/></a>
                 </div>
             </ul>
         </div>
