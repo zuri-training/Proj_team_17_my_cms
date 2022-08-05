@@ -107,3 +107,11 @@
     top: 144px;
     box-shadow: 2px 4px 25px 10px rgba(0, 0, 0, 0.2);
 }
+
+.contact-content  label, .contact-col label, p {
+    color: #2B2C2E !important;
+}
+
+.contact-content  h1{
+    color: #414345;
+}

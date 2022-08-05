@@ -19,7 +19,7 @@ const ContactUs = () => {
                 <input
                   type="email"
                   id="fn-input"
-                  placeholder="johndoe@example.com"
+                  placeholder="John"
                   className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20 " 
                   required
                 />
@@ -29,7 +29,7 @@ const ContactUs = () => {
                 <input
                   type="email"
                     id="ln-input"
-                  placeholder="johndoe@example.com"
+                  placeholder="Doe"
                   className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20 " 
                   required
                 />
