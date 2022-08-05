@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEyeSlash, faEye } from '@fortawesome/free-regular-svg-icons';
+import login from '../assets/img/rafiki.svg';
+
 
 const Login = () => {
   const [open, setOpen] = useState(false);
@@ -11,15 +13,16 @@ const Login = () => {
 
   return (
     <>
-      <div className='flex h-full'>
+    <section className='h-screen session-bg'>
+      <div className='flex mt-28 '>
         <div className='w-1/2'>
-          <h1 className="text-center mb-12 mt-10 font-semibold overflow-hidden text-4xl">Login</h1>
           <div className='flex items-center justify-center flex-col'>
 
             <form action="submit" method="post">
+          <h1 className=" mb-8 mt-10 font-semibold overflow-hidden text-4xl color1">Login</h1>
               <input type="hidden" name="remember" defaultValue="true" />
               <div className="">
-                <div className='mb-8'>
+                <div className='mb-4'>
                   <label htmlFor="username" className="">Username</label>
                   <input
                     id="username"
@@ -72,7 +75,7 @@ const Login = () => {
                 </div>
               </div>
 
-              <button className="btn-bg rounded-md font-semibold w-[481px] h-12 bg-gray-400 mt-6 flex items-center justify-center">Login</button>
+              <button className="btn-bg rounded-md font-semibold w-[481px] h-12 bg-gray-400 mt-4 flex items-center justify-center">Login</button>
 
               <div className="flex items-center justify-center flex-col">
                 <div className="pt-3">
@@ -84,11 +87,11 @@ const Login = () => {
                 <div className="mb-12">
                   <p className="mb-3">Continue with:</p>
                   <div className="flex items-center gap-9">
-                  <div className="w-8 h-8 bg-gray-400 rounded-full">
+                  <div className="w-8 h-8 btn-bg rounded-full">
                 
                   </div>
-                  <div className="w-8 h-8 bg-gray-400 rounded-full"></div>
-                  <div className="w-8 h-8 bg-gray-400 rounded-full"></div>
+                  <div className="w-8 h-8 btn-bg rounded-full"></div>
+                  <div className="w-8 h-8 btn-bg rounded-full"></div>
                   </div>
                 </div>
               </div>
@@ -96,8 +99,11 @@ const Login = () => {
 
           </div>
         </div>
-        <div className='bg-gray-400 w-2/4  bg-uu'></div>
+        <div className="mt-24">
+        <img src={login} alt="sign up img" />
+        </div>
       </div>
+      </section>
     </>
   );
 }

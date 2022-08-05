@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { faEyeSlash, faEye } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import pana from '../assets/img/pana.svg';
+import signup from '../assets/img/pana.svg';
 
 
 const SignUp = () => {
@@ -13,7 +13,7 @@ const SignUp = () => {
 
   return (
     <div className="h-screen session-bg">
-      <div className="container1 mt-28  flex">
+      <div className=" mt-28  flex">
       <div className="w-1/2">
         <div className="flex items-center justify-center flex-col">
         
@@ -91,7 +91,7 @@ const SignUp = () => {
         </div>
       </div>
         <div className="mt-20">
-        <img src={pana} alt="sign up img" />
+        <img src={signup} alt="sign up img" />
         </div>
       </div>
     </div>
