@@ -108,7 +108,7 @@
     box-shadow: 2px 4px 25px 10px rgba(0, 0, 0, 0.2);
 }
 
-.contact-content  label, .contact-col label, p {
+.contact-content  label, .contact-col label,.contact-col p {
     color: #2B2C2E !important;
 }
 
