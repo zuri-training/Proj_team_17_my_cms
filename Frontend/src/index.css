@@ -26,7 +26,7 @@
 
 .btn-bg {
     background: #402A2E;
-    color: #FFF;
+    color: #FFF !important;
 }
 
 .cms-bg{
