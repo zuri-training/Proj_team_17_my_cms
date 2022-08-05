@@ -87,3 +87,28 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+/* Login & Sign Up Styles */
+.session-bg {
+    background: #F8F1F2;
+}
+
+.contact {
+    background: linear-gradient(180deg, #402A2E 57.48%, #F9F9F9 57.49%);
+}
+
+.contact-content {
+    width: 1366px;
+    height: 736px;
+    left: 37px;
+    top: 144px;
+    box-shadow: 2px 4px 25px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-content  label, .contact-col label, p {
+    color: #2B2C2E !important;
+}
+
+.contact-content  h1{
+    color: #414345;
+}
