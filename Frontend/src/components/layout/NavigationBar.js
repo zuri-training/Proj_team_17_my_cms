@@ -21,19 +21,19 @@ const NavigationBar = () => {
 
             <ul className='flex lg:w-3/5 w-8/12 justify-between item-center'>
                 <div className='inline-flex item-center'>
-                    <div className='w-auto inline-flex items-center mr-12 cursor-pointer'>
-                        <li className='py-1 pr-3 lg:text-base text-sm not-italic font-medium'>
+                    <div className='w-auto inline-flex items-center cursor-pointer'>
+                        <li className='py-1 pr-3 pl-3 lg:text-base text-sm not-italic font-medium'>
                             Resources
                         </li>
                         <FontAwesomeIcon icon={faCaretDown} />
                     </div>
                     <div className='w-auto inline-flex items-center cursor-pointer'>
-                        <li className='py-1 pr-3 lg:text-base text-sm not-italic font-medium'>
+                        <li className='py-1 pr-4 pl-8 lg:text-base text-sm not-italic font-medium'>
                             Templates
                         </li>
                     </div>
                     <div className='w-auto inline-flex items-center cursor-pointer'>
-                        <li className='py-1 pl-3 lg:text-base text-sm not-italic font-medium'>
+                        <li className='py-1 pr-3 pl-4 lg:text-base text-sm not-italic font-medium'>
                             Features
                         </li>
                         <FontAwesomeIcon icon={faCaretDown} />
