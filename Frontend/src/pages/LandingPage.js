@@ -8,13 +8,16 @@ import ChooseDomain from '../components/general/ChooseDomain';
 import LinkAccount from '../components/general/LinkAccount';
 import CreateWebsite from '../components/general/CreateWebsite';
 import Footer from '../components/layout/Footer';
+import '../index.css';
 
 
 const LandingPage = () => {
   return (
     <>
+    <div className='header'>
       <NavigationBar />
       <GetStarted />
+    </div>
       <BrowseTemplates />
       <ViewInsights />
       <LinkAccount />

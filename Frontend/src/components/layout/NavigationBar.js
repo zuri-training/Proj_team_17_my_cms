@@ -1,5 +1,5 @@
 import React from 'react';
-import vectorLogo from '../../assets/Vector.png';
+import vectorLogo from '../../assets/img/Vector.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown, faBars } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
@@ -29,7 +29,12 @@ const NavigationBar = () => {
                     </div>
                     <div className='w-auto inline-flex items-center cursor-pointer'>
                         <li className='py-1 pr-3 lg:text-base text-sm not-italic font-medium'>
-                            Feature
+                            Templates
+                        </li>
+                    </div>
+                    <div className='w-auto inline-flex items-center cursor-pointer'>
+                        <li className='py-1 pl-3 lg:text-base text-sm not-italic font-medium'>
+                            Features
                         </li>
                         <FontAwesomeIcon icon={faCaretDown} />
                     </div>
@@ -37,7 +42,7 @@ const NavigationBar = () => {
 
                 <div className='inline-flex items-center'>
                     <li className='py-1 px-3 mr-4'>
-                        <a href="/login" className='font-medium text-sm lg:text-base not-italic cursor-pointer inline-flex'>Login</a>
+                        <a href="/login" className='font-medium text-sm lg:text-base not-italic cursor-pointer inline-flex'>Sign In</a>
                     </li>
                     
                     <a href='/signup'><Button name="Get Started"/></a>
