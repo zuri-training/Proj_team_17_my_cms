@@ -3,8 +3,9 @@ import Button from '../components/general/Button';
 
 const ContactUs = () => {
   return (
-    <section className='bg-gray-200 h-screen w-full'>
-      <div className='mt-24'>
+    <section className='contact h-screen'>
+      <div className='contact-content bg-white rounded-xl mx-auto mt-40'>
+      <div className='mt-24 '>
         <div className='contact-text-container mb-10'>
           <h1 className="text-center mb-7 font-semibold overflow-hidden text-4xl">Contact Us</h1>
           <p className='text-center'>Please talk to us, we would love to hear from you!</p>
@@ -18,7 +19,7 @@ const ContactUs = () => {
                 <input
                   type="email"
                   id="fn-input"
-                  placeholder="johndoe@example.com"
+                  placeholder="John"
                   className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20 " 
                   required
                 />
@@ -28,7 +29,7 @@ const ContactUs = () => {
                 <input
                   type="email"
                     id="ln-input"
-                  placeholder="johndoe@example.com"
+                  placeholder="Doe"
                   className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20 " 
                   required
                 />
@@ -63,6 +64,7 @@ const ContactUs = () => {
             </div>
           </form>
         </div>
+      </div>
       </div>
     </section>
   );
