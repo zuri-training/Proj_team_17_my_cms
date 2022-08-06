@@ -8,6 +8,7 @@ import SignUp from "./pages/SignUp";
 import Login from "./pages/Login"
 import ContactUs from "./pages/ContactUs";
 import DashBoard from "./pages/DashBoard";
+import Template1 from "./Templates/Template";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="contact-us" element={<ContactUs />} />
         <Route path="dashboard" element={<DashBoard/>} />
         <Route path="grapesjs" element={<GrapesjsMain />} />
+        <Route path="/template1" element={<Template1 />} />
       </Routes>
   );
 }
