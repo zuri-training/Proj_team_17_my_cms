@@ -1,16 +1,14 @@
 from django.urls import path
 from . import views
-from .views import RegisterView, LoginView
+from .views import RegisterView, LoginView, UserView, LogoutView
 
 app_name = 'accounts'
 
 urlpatterns = [
-    # url to the pages
-    path('', views.index), # index page
-    path('login/', views.index), # login page
-    path('signup/', views.index), # signup page
-
-    # url to the api
-    path('api/signup', RegisterView.as_view()), # signup api
-    path('api/login', LoginView.as_view()) # login api
+    # url to the index view
+    path('', views.index),
+    path('registeruser', RegisterView.as_view()),
+    path('loginuser', LoginView.as_view()),
+    path('user', UserView.as_view()),
+    path('logoutuser', LogoutView.as_view()),
 ]
