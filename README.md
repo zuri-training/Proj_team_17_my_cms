@@ -1,5 +1,9 @@
 ## Web-It - CMS
 
+![GitHub repo size](https://img.shields.io/github/repo-size/zuri-training/Proj_team_17_my_cms?logo=github&style=for-the-badge)
+![Hex.pm](https://img.shields.io/hexpm/l/plug?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/zuri-training/Proj_team_17_my_cms?style=for-the-badge)
+
 ### Welcome to the repository of our Web-It web application.
 
 Web-It is a web application that helps users create, customize, manage, and modify content on a website without the need for specialized technical knowledge. In simpler words, it is a content management system that helps you build a website without needing to write all the code from scratch (or even know how to code at all).
