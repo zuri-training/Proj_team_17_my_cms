@@ -15,7 +15,7 @@ const Footer = () => {
                 <h4 className='font-bold text-xl not-italic pb-2 inline-flex'>Resources</h4>
                 <Link to="/faqs"><p className='pb-1 inline-flex font-medium text-xl'>FAQs</p></Link>
                 <Link to="/contact-us"><p className='pb-1 inline-flex font-medium text-xl'>Contact Us</p></Link>
-                <Link to="/demo-video"><p className='pb-1 inline-flex font-medium text-xl'>Docs</p></Link>
+                <Link to="/docs"><p className='pb-1 inline-flex font-medium text-xl'>Docs</p></Link>
                 <Link to="/feedback-hub"><p className='pb-1 inline-flex font-medium text-xl'>Feedback Hub</p></Link>
             </div>
             <div className='mx-auto flex flex-col justify-start h-44 items-start'>
