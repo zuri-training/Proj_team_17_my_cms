@@ -42,8 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'accounts.apps.AccountsConfig',
-    'rest_framework',
-    'corsheaders'
+    
    
     
 ]
@@ -147,14 +146,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Linked static files from the frontend
 STATICFILES_DIRS = [os.path.join(BASE_DIR, '../../Frontend/build/static')]
 
-<<<<<<< HEAD
 
 AUTH_USER_MODEL = 'accounts.User'
 
 CORS_ORIGIN_ALLOW_ALL = True
-=======
-AUTH_USER_MODEL = 'accounts.User'
-
-CORS_ALLOW_ALL_ORIGINS = True
->>>>>>> 499376f1489f1241e6472f6caebfd16f5a0f8e4a
 CORS_ALLOW_CREDENTIALS = True

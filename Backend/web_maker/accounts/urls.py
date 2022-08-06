@@ -7,8 +7,8 @@ app_name = 'accounts'
 urlpatterns = [
     # url to the index view
     path('', views.index),
-    path('registeruser', RegisterView.as_view()),
-    path('loginuser', LoginView.as_view()),
-    path('user', UserView.as_view()),
-    path('logoutuser', LogoutView.as_view()),
+    path('api/register', RegisterView.as_view()),
+    path('api/login', LoginView.as_view()),
+    path('api/user', UserView.as_view()),
+    path('api/logout', LogoutView.as_view()),
 ]
