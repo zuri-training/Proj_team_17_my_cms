@@ -11,8 +11,7 @@ class User (AbstractUser):
     
     REQUIRED_FIELDS = []
     
-    def __str__(self):
-        return self.name
+    REQUIRED_FIELDS = []
     
 class Template(models.Model):
     name = models.CharField(max_length=200, null=True)

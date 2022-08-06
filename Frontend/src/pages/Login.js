@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEyeSlash, faEye } from '@fortawesome/free-regular-svg-icons';
+import login from '../assets/img/rafiki.svg';
+
 
 const Login = () => {
   const [open, setOpen] = useState(false);
@@ -11,7 +13,7 @@ const Login = () => {
 
   return (
     <>
-      <div className='flex h-full'>
+      <div className='cms-bg flex h-full'>
         <div className='w-1/2'>
           <h1 className="text-center mb-12 mt-10 font-semibold overflow-hidden text-4xl">Login</h1>
           <div className='flex items-center justify-center flex-col'>
@@ -96,7 +98,9 @@ const Login = () => {
 
           </div>
         </div>
-        <div className='bg-gray-400 w-2/4  bg-uu'></div>
+        <div className='w-2/4 bg-uu'>
+          <img src={login} alt="sign up img" />
+        </div>
       </div>
     </>
   );

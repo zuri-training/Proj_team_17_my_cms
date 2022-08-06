@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { faEyeSlash, faEye } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import signup from '../assets/img/pana.svg';
 
 
 const SignUp = () => {
@@ -11,12 +12,13 @@ const SignUp = () => {
   };
 
   return (
-    <div className="h-full flex">
+    <div className="h-screen session-bg">
+      <div className=" mt-28  flex">
       <div className="w-1/2">
-        <h1 className="text-center mb-12 mt-10 font-semibold overflow-hidden text-4xl">Sign Up</h1>
         <div className="flex items-center justify-center flex-col">
         
           <form action="submit" method="post">
+        <h1 className=" mb-12  font-semibold overflow-hidden text-4xl color1">Sign Up</h1>
             <div className="w-[481] mb-6 ">
               <label htmlFor="name-input" className=" font-medium block mb-2 text-sm  text-black dark:text-gray-300">Name</label>
               <input
@@ -75,21 +77,25 @@ const SignUp = () => {
               <p>Already have an account? <a href="/login">Log In</a></p>
             </div>
 
-            <p className="mt-8 mb-8">OR</p>
+           <p className="mt-8 mb-8">OR</p>
         
             <div className="mb-12">
               <p className="mb-3">continue with:</p>
               <div className="flex items-center gap-9">
-                <div className="w-8 h-8 bg-gray-400 rounded-full"></div>
-                <div className="w-8 h-8 bg-gray-400 rounded-full"></div>
-                <div className="w-8 h-8 bg-gray-400 rounded-full"></div>
+                <div className="w-8 h-8 btn-bg rounded-full"></div>
+                <div className="w-8 h-8 btn-bg rounded-full"></div>
+                <div className="w-8 h-8 btn-bg rounded-full"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-gray-400 w-2/4  bg-uu"></div>
+        <div className="mt-20">
+        <img src={signup} alt="sign up img" />
+        </div>
+      </div>
     </div>
+    
   );
 };
 

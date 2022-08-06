@@ -29,37 +29,34 @@
     color: #FFF;
 }
 
-
-
-
-
-.bt-box {
-    display: inline-block;
-    width: 430px;
-    height: 578px;
-    background: #d5d6d8;
+.cms-bg{
+    background: #F8F1F2;
 }
 
-.vi-box {
-    display: block;
-    width: 480px;
-    height: 457px;
-    background: #d5d6d8;
+
+
+
+
+.browse-temp-img{
+    width: 432px;
 }
 
-.lmc-box {
-    display: inline-block;
+.integration-img{
     width: 240px;
-    height: 240px;
-    background: #d5d6d8;
+    height: auto;
 }
 
-.cd-box {
-    display: block;
-    width: 792px;
-    height: 489px;
-    background: #d5d6d8;
+.viewInsights-img {
+    width: 550px;
+    height: auto;
 }
+
+.choosedomain-img {
+    width: 792px;
+    height: auto;
+}
+
+
 
 
 .he {
@@ -89,4 +86,29 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+/* Login & Sign Up Styles */
+.session-bg {
+    background: #F8F1F2;
+}
+
+.contact {
+    background: linear-gradient(180deg, #402A2E 57.48%, #F9F9F9 57.49%);
+}
+
+.contact-content {
+    width: 1366px;
+    height: 736px;
+    left: 37px;
+    top: 144px;
+    box-shadow: 2px 4px 25px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-content  label, .contact-col label, p {
+    color: #2B2C2E !important;
+}
+
+.contact-content  h1{
+    color: #414345;
 }

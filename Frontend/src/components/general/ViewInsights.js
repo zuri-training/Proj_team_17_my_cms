@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import viewInsights from '../../assets/img/viewInsights-img.png';
 
 const ViewInsights = () => {
   return (
@@ -12,8 +13,8 @@ const ViewInsights = () => {
                 </p>
                 <Link to='' className='font-semibold'>View Insights →</Link>
             </div>
-            <div className='inline-flex'>
-                <span className='vi-box'></span>
+            <div>
+                <img src={viewInsights} alt="view insights" className='viewInsights-img' />
             </div>
         </div>
     </section>
