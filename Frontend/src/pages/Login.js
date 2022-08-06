@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEyeSlash, faEye } from '@fortawesome/free-regular-svg-icons';
 import login from '../assets/img/rafiki.svg';
+import { Link } from 'react-router-dom';
 
 
 const Login = () => {
@@ -13,7 +14,7 @@ const Login = () => {
 
   return (
     <>
-      <div className='cms-bg flex h-full'>
+      <div className='cms-bg flex items-center h-screen'>
         <div className='w-1/2'>
           <h1 className="text-center mb-12 mt-10 font-semibold overflow-hidden text-4xl">Login</h1>
           <div className='flex items-center justify-center flex-col'>
@@ -68,9 +69,9 @@ const Login = () => {
                 </div>
 
                 <div className="text-sm">
-                  <a href="/forgot" className="font-semibold text-[#ABAEB0] text-xs hover:text-gray-500">
+                  <Link to="/forgot" className="font-semibold text-[#ABAEB0] text-xs hover:text-gray-500">
                     Forgot password?
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -78,7 +79,7 @@ const Login = () => {
 
               <div className="flex items-center justify-center flex-col">
                 <div className="pt-3">
-                  <p>Don't have an account? <a href="/signup">Sign Up</a></p>
+                  <p>Don't have an account? <Link to="/signup">Sign Up</Link></p>
                 </div>
 
                 <p className="mt-8 mb-8">OR</p>

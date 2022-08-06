@@ -2,6 +2,7 @@ import { useState } from "react";
 import { faEyeSlash, faEye } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import signup from '../assets/img/pana.svg';
+import { Link } from "react-router-dom";
 
 
 const SignUp = () => {
@@ -25,8 +26,7 @@ const SignUp = () => {
                 type="text"
                 id="name-input"
                 placeholder="John Doe"
-                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20 " 
-                required
+                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20  placeholder-gray-400  " required
               />
             </div>
             <div className="w-[481px] mb-6">
@@ -35,8 +35,7 @@ const SignUp = () => {
                 type="text"
                 id="usern-input"
                 placeholder="johndoe"
-                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20 " 
-                required
+                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20   dark:placeholder-gray-400  " required
               />
             </div>
             <div className=" w-[481px] mb-6">
@@ -45,8 +44,7 @@ const SignUp = () => {
                 type="email"
                 id="email-input"
                 placeholder="johndoe@example.com"
-                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20 " 
-                required
+                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20 dark:placeholder-gray-400  " required
               />
               <p className="invisible peer-invalid:visible text-red-700 font-light">
                   Please enter a valid email address
@@ -59,8 +57,7 @@ const SignUp = () => {
                   type={open === false ? "password" : "text"}
                   id="passw-input"
                   placeholder="*********"
-                  className="h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20 " 
-                  required
+                  className="h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20  dark:placeholder-gray-400  " required
                 />
               </div>
 
@@ -78,7 +75,7 @@ const SignUp = () => {
         
           <div className="flex items-center justify-center flex-col">
             <div className="pt-3">
-              <p>Already have an account? <a href="/login">Log In</a></p>
+              <p>Already have an account? <Link to="/login">Log In</Link></p>
             </div>
 
            <p className="mt-8 mb-8">OR</p>

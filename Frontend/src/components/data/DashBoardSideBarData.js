@@ -1,6 +1,6 @@
 
-import { faEye, faUserCircle, faCopy,  } from '@fortawesome/free-regular-svg-icons';
-import { faIdBadge, faCog, faPager, faChartArea, faChartColumn, faChartLine, faContactBook, faBookBookmark, faBroadcastTower, } from '@fortawesome/free-solid-svg-icons';
+import {  faUserCircle  } from '@fortawesome/free-regular-svg-icons';
+import {  faCog, faPager,  faChartLine,  faFileCirclePlus,  faFileText, } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,40 +8,40 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const DashBoardSideBarData = [
     {
-        icon:<FontAwesomeIcon icon={faBroadcastTower}/>,
+        icon:<FontAwesomeIcon icon={faFileCirclePlus}/>,
         title:'Posts',
-        path:'/forgot',
+        path:'/posts',
     },
     {
-        icon:<FontAwesomeIcon icon={faChartLine}/>,
+        icon:<FontAwesomeIcon icon={faPager}/>,
         title:'Templates',
-        path:'/',
+        path:'/templates',
     },
     {
         icon:<FontAwesomeIcon icon={faUserCircle}/>,
         title:'Accounts',
-        path:'/',
+        path:'/accounts',
     },
     {
-        icon:<FontAwesomeIcon icon={faEye}/>,
+        icon:<FontAwesomeIcon icon={faFileText}/>,
         title:'Pages',
-        path:'/signup',
+        path:'/pages',
     },
     {
         icon:<FontAwesomeIcon icon={faChartLine}/>,
         title:'Insights',
-        path:'/',
+        path:'/insight',
     },
     {
-        icon:<FontAwesomeIcon icon={faPager}/>,
+        icon:<FontAwesomeIcon icon={faFileCirclePlus}/>,
         title:'View page',
-        path:'/',
+        path:'/view-page',
     },
     
     {
         icon:<FontAwesomeIcon icon={faCog}/>,
         title:'settings',
-        path:'/',
+        path:'/settings',
     },
     
 ]
