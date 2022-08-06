@@ -2,6 +2,7 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/zuri-training/Proj_team_17_my_cms?logo=github&style=for-the-badge)
 ![Hex.pm](https://img.shields.io/hexpm/l/plug?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/zuri-training/Proj_team_17_my_cms?style=for-the-badge)
 
 ### Welcome to the repository of our Web-It web application.
 
