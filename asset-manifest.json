@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/team17cms/static/css/main.a2caeddc.css",
+    "main.js": "/team17cms/static/js/main.0cf4e508.js",
+    "static/js/787.afbdea96.chunk.js": "/team17cms/static/js/787.afbdea96.chunk.js",
+    "static/media/integration-img.jpg": "/team17cms/static/media/integration-img.b3ed0d1f0cc8d1065849.jpg",
+    "static/media/browse-temp1-img.png": "/team17cms/static/media/browse-temp1-img.395977e7cd19a1f96fc6.png",
+    "static/media/header-bg.jpg": "/team17cms/static/media/header-bg.1289e120ef55b6fc7e3a.jpg",
+    "static/media/choosedomain-img.png": "/team17cms/static/media/choosedomain-img.de44904f4c15083500f9.png",
+    "static/media/viewInsights-img.png": "/team17cms/static/media/viewInsights-img.f7e2360cd7bb7b3e0c0e.png",
+    "static/media/resources-bg.jpg": "/team17cms/static/media/resources-bg.dc5165ff444c441799bd.jpg",
+    "static/media/pana.svg": "/team17cms/static/media/pana.18dc2b147fe10502131503bc6db8e6e4.svg",
+    "static/media/rafiki.svg": "/team17cms/static/media/rafiki.83a8c5be1f3d825f68494e82af6f58fa.svg",
+    "index.html": "/team17cms/index.html",
+    "main.a2caeddc.css.map": "/team17cms/static/css/main.a2caeddc.css.map",
+    "main.0cf4e508.js.map": "/team17cms/static/js/main.0cf4e508.js.map",
+    "787.afbdea96.chunk.js.map": "/team17cms/static/js/787.afbdea96.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2caeddc.css",
+    "static/js/main.0cf4e508.js"
+  ]
+}
