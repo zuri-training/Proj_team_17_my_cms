@@ -1,36 +1,28 @@
 import React from 'react';
-import Button from '../components/general/Button';
-import TextInputGroup from '../components/layout/TextInputGroup';
+
 
 const ForgotPassword = () => {
   return (
-    <div className='flex items-center p-0'>
-        <div className='first-col'>
-
-        </div>
-
-        <div className='second-col'>
-            <div className='content ml-20 flex flex-col justify-center'>
-                <div className='texts flex flex-col h-auto'>
-                    <h2 className='not-italic'>
-                        Forgot Password?
-                    </h2>
-                    <p className='not-italic text-base'>
-                        Oops! <br/>
-                        Don’t worry, we’ll help you get back in.
-                    </p>
-                </div>
-                <div className='flex flex-col w-full h-auto'>
-                    <form >
-                      <TextInputGroup
-                      label='Enter your email address'
-                      placeholder='johndoe@example.com'
-                      type='email'
-                      className='lg:p-3 p-2.5 w-full input outline-none'
-                      />
-                    </form>
-                    <Button name='Send password recovery link'/>
-                </div>
+    <div className='h-screen flex'>
+        <div className="bg-gray-400 w-2/4  bg-uu"></div>
+        <div className='w-1/2 flex flex-col justify-center m-auto'>
+            <h1 className="text-center mb-7 font-semibold overflow-hidden text-4xl">Forgot Password?</h1>
+            <p className='text-center mb-9 not-italic text-base'>Oops! <br/> Don’t worry, we’ll help you get back in.</p>
+            <div className='flex items-center justify-center flex-col'>
+                <form >
+                    <div className=" w-[481px] mb-6">
+                        <label htmlFor="forg-passw-input" className="block mb-2 text-sm font-medium  text-black">Enter your email address</label>
+                        <input
+                            type="email"
+                            id="forg-passw-input"
+                            placeholder="johndoe@example.com"
+                            className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20 dark:placeholder-gray-400 dark:text-white " required
+                        />
+                    </div>
+                    <button type="submit" className="btn-bg rounded-md font-semibold w-[481px] h-12 bg-gray-400 mt-6 flex items-center justify-center">
+                        Send password recovery link
+                    </button>
+                </form>
             </div>
         </div>
     </div>

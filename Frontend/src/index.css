@@ -1,92 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300;400;500;700;800;900&family=Nunito:wght@500;600;700&display=swap');
 
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --Nunito-font: 'Nunito', sans-serif;
+    --Arima-font: 'Arima Madurai', cursive;
+}
+
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
-    /* background: #ffffff; */
+    overflow-x: hidden;
     list-style: none;
+    font-family: var(--Nunito-font);
 }
 
-.btn-color {
-    background: #C0C2C4;
+.arima-heading {
+    font-family: var(--Arima-font);
 }
 
-.bt-box {
-    display: inline-block;
-    width: 430px;
-    height: 578px;
-    background: #d5d6d8;
+.btn-bg {
+    background: #402A2E;
+    color: #FFF !important;
 }
 
-.gi-box {
-    display: block;
-    width: 588px;
-    height: 457px;
-    background: #d5d6d8;
+.cms-bg{
+    background: #F8F1F2;
 }
 
-.lmc-box {
-    display: inline-block;
+
+
+
+
+.browse-temp-img{
+    width: 432px;
+}
+
+.integration-img{
     width: 240px;
-    height: 240px;
-    background: #d5d6d8;
+    height: auto;
 }
 
-.cd-box {
-    display: block;
+.viewInsights-img {
+    width: 550px;
+    height: auto;
+}
+
+.choosedomain-img {
     width: 792px;
-    height: 489px;
-    background: #d5d6d8;
+    height: auto;
 }
 
-/* Styles for Forgot Password Page */
-.first-col {
-    width: 720px;
-    height: 1024px;
-    background: #C0C2C4;
+
+
+
+.he {
+    min-height: 100vh;
+
 }
 
-.second-col {
-    width: 720px;
-    height: 1024px;
-    background: #E5ECEE;
+.t {
+    float: left;
+    text-align: justify;
 }
 
-.content {
-    width: 481px;
-    height: 90%;
+/* Landing page extra styles */
+.header {
+    background: linear-gradient(0deg, rgba(243, 229, 232, 0.72), rgba(243, 229, 232, 0.72)), url('assets/img/header-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-.texts {
-    width: 422px;
+.color1 {
+    color: #402A2E;
 }
 
-.texts h2 {
-    font-weight: 600;
-    font-size: 35px;
+.resources-header {
+    background: linear-gradient(0deg, rgba(64, 42, 46, 0.53), rgba(64, 42, 46, 0.53)), url(assets/img/resources-bg.jpg), #F3E5E8;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-.texts p {
-    font-weight: 500;
-    margin: 20px 0;
+/* Login & Sign Up Styles */
+.session-bg {
+    background: #F8F1F2;
 }
 
-.input-color {
-    color: #C0C2C4;
+.contact {
+    background: linear-gradient(180deg, #402A2E 57.48%, #F9F9F9 57.49%);
 }
 
-.label-color {
-    color: #2B2C2E;
+.contact-content {
+    width: 1366px;
+    height: 736px;
+    left: 37px;
+    top: 144px;
+    box-shadow: 2px 4px 25px 10px rgba(0, 0, 0, 0.2);
 }
 
-input {
-    border: 1px solid #D5D6D8;
+.contact-content  label, .contact-col label,.contact-col p {
+    color: #2B2C2E !important;
 }
+
+.contact-content  h1{
+    color: #414345;
+}
+
