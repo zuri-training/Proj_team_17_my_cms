@@ -32,7 +32,7 @@ const Login = () => {
                     name="username"
                     type="text"
                     required
-                    className="h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20 "
+                    className="h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12 "
                     placeholder="johndoe"
                   />
                 </div>
@@ -46,7 +46,7 @@ const Login = () => {
                     type={open === false ? "password" : "text"}
                     autoComplete="current-password"
                     required
-                    className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20 "
+                    className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12 "
                     placeholder="********"
                   />
                   <span className='float-right relative -top-9 -left-4'>{open === false ? (

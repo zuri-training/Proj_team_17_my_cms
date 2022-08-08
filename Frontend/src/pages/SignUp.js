@@ -26,7 +26,7 @@ const SignUp = () => {
                 type="text"
                 id="name-input"
                 placeholder="John Doe"
-                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20  placeholder-gray-400  " required
+                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12  placeholder-gray-400  " required
               />
             </div>
             <div className="w-[481px] mb-6">
@@ -35,7 +35,7 @@ const SignUp = () => {
                 type="text"
                 id="usern-input"
                 placeholder="johndoe"
-                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20   dark:placeholder-gray-400  " required
+                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12   dark:placeholder-gray-400  " required
               />
             </div>
             <div className=" w-[481px] mb-6">
@@ -44,7 +44,7 @@ const SignUp = () => {
                 type="email"
                 id="email-input"
                 placeholder="johndoe@example.com"
-                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20 dark:placeholder-gray-400  " required
+                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12 dark:placeholder-gray-400  " required
               />
               <p className="invisible peer-invalid:visible text-red-700 font-light">
                   Please enter a valid email address
@@ -57,7 +57,7 @@ const SignUp = () => {
                   type={open === false ? "password" : "text"}
                   id="passw-input"
                   placeholder="*********"
-                  className="h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20  dark:placeholder-gray-400  " required
+                  className="h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12  dark:placeholder-gray-400  " required
                 />
               </div>
 
