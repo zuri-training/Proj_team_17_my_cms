@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export const DashBoardSideBarData = [
     {
         icon:<FontAwesomeIcon icon={faFileCirclePlus}/>,
-        title:'Posts',
+        title:'Website',
         path:'/posts',
     },
     {
