@@ -6,6 +6,7 @@ import SignUp from "./pages/SignUp";
 import Login from "./pages/Login"
 import ContactUs from "./pages/ContactUs";
 import DashBoard from "./pages/DashBoard";
+import Error from "./pages/Error";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="contact-us" element={<ContactUs />} />
         <Route path="dashboard" element={<DashBoard/>} />
+        <Route path="error" element={<Error/>} />
       </Routes>
   );
 }

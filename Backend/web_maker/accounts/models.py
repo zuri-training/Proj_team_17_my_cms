@@ -7,11 +7,9 @@ class User (AbstractUser):
     email = models.CharField(max_length=200, default='DEFAULT VALUE')
     password = models.CharField(max_length=200, default='DEFAULT VALUE')
     username = models.CharField(max_length=200, unique=True, default='DEFAULT VALUE')
-
     
-    REQUIRED_FIELDS = []
+    REQUIRED_FIELDS = ['name', 'email', 'password']
     
-    REQUIRED_FIELDS = []
     
 class Template(models.Model):
     name = models.CharField(max_length=200, null=True)
