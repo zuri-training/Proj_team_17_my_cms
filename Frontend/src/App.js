@@ -12,7 +12,7 @@ import Error from "./pages/Error";
 function App() {
   return (
       <Routes>
-        <Route path="/team17cms" element={<LandingPage />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/forgot" element={<ForgotPassword />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="login" element={<Login />} />
