@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEyeSlash, faEye } from '@fortawesome/free-regular-svg-icons';
+import { faEyeSlash, faEye, faArrowAltCircleLeft } from '@fortawesome/free-regular-svg-icons';
 import login from '../assets/img/rafiki.svg';
 import { Link } from 'react-router-dom';
 
@@ -16,9 +16,12 @@ const Login = () => {
     <>
       <div className='cms-bg flex items-center h-screen'>
         <div className='w-1/2'>
-          <h1 className="text-center mb-12 mt-10 font-semibold overflow-hidden text-4xl">Login</h1>
-          <div className='flex items-center justify-center flex-col'>
+          <div className='inline-flex justify-start w-full cursor-pointer'>
+            <FontAwesomeIcon icon={faArrowAltCircleLeft} className='ml-10' />
+          </div>
+          <h1 className="text-center mb-12 font-semibold overflow-hidden text-4xl">Login</h1>
 
+          <div className='flex items-center justify-center flex-col'>
             <form action="submit" method="post">
               <input type="hidden" name="remember" defaultValue="true" />
               <div className="">
@@ -99,7 +102,7 @@ const Login = () => {
 
           </div>
         </div>
-        <div className='w-2/4 bg-uu'>
+        <div className='w-2/4 bg-uu inline-flex'>
           <img src={login} alt="sign up img" />
         </div>
       </div>
