@@ -45,7 +45,7 @@ class LoginView(APIView):
             return Response({'token':token, 'msg': 'Login Successful'},
             status=status.HTTP_200_OK)
         else: 
-            return Response({'errors': {'non_field_errors': ['Username or Password is invalid']}}, status=statusHTTP_404_NOT_FOUND)
+            return Response({'errors': {'non_field_errors': ['Username or Password is invalid']}}, status=status.HTTP_404_NOT_FOUND)
 
 #get a the logged in user (name, username and email)
 class ProfileView(APIView):
