@@ -1,0 +1,3 @@
+- [Worked on the Login page of the design](https://www.figma.com/file/Uli9IZeFBp4ZlCe46ui6dI/Team-17_my_cms?node-id=2326%3A4851)
+- [Worked on the sign up page of the design](https://www.figma.com/file/Uli9IZeFBp4ZlCe46ui6dI/Team-17_my_cms?node-id=2326%3A4851)
+- [Github link to commit login page](https://github.com/zuri-training/Proj_team_17_my_cms/commit/3cb956d32aa2001490d66e209fbddcbb6ec1e75c) 
