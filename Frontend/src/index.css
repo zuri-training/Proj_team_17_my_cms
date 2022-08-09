@@ -20,13 +20,26 @@
     font-family: var(--Nunito-font);
 }
 
-.arima-heading {
+/* .arima-heading {
     font-family: var(--Arima-font);
+} */
+
+.viewinsights-sec{
+    margin-top: -480px;
+}
+
+.linkaccount-sec{
+    margin-top: -200px;
 }
 
 .btn-bg {
+    background: #FFF;
+    color: #402A2E;
+}
+
+.colorbtn-bg{
     background: #402A2E;
-    color: #FFF !important;
+    color: #fff;
 }
 
 .cms-bg{
@@ -37,12 +50,16 @@
 
 
 
-.browse-temp-img{
+.browse-temp1-img{
     width: 432px;
+    height: auto;
+}.browse-temp2-img{
+    width: 396px;
+    height: auto;
 }
 
 .integration-img{
-    width: 240px;
+    width: 588px;
     height: auto;
 }
 
@@ -52,7 +69,7 @@
 }
 
 .choosedomain-img {
-    width: 792px;
+    width: 840px;
     height: auto;
 }
 
@@ -71,14 +88,10 @@
 
 /* Landing page extra styles */
 .header {
-    background: linear-gradient(0deg, rgba(243, 229, 232, 0.72), rgba(243, 229, 232, 0.72)), url('assets/img/header-bg.jpg');
+    background: linear-gradient(0deg, rgba(80, 51, 57, 0.72), rgba(80, 56, 62, 0.72)), url('assets/img/header-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-}
-
-.color1 {
-    color: #402A2E;
 }
 
 .resources-header {
@@ -86,6 +99,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    height: 1024px;
 }
 
 /* Login & Sign Up Styles */
