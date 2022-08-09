@@ -14,7 +14,7 @@ const SignUp = () => {
 
   return (
     <div className="h-screen session-bg">
-      <div className=" mt-28  flex">
+      <div className=" mt-10  flex">
       <div className="w-1/2">
         <div className="flex items-center justify-center flex-col">
         
