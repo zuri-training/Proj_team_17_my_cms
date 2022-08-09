@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../components/general/Button';
+
 
 const ContactUs = () => {
   return (
@@ -59,7 +59,7 @@ const ContactUs = () => {
                   required
                 >
                 </textarea>
-                <Button name='Send Message' />
+                <button type="submit" className='colorbtn-bg py-3 px-6 lg:text-base text-sm not-italic font-medium rounded cursor-pointer'>Send Message</button>
               </div>
             </div>
           </form>
