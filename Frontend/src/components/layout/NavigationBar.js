@@ -37,10 +37,10 @@ const NavigationBar = () => {
                         <div className='py-1 text-white px-3 lg:text-base text-sm not-italic font-medium' onClick={show1Toggle}>
                             Features
                             <FontAwesomeIcon icon={faCaretDown} className='text-white px-3' />
-                            { show1 === false ?<div className='block absolute w-auto py-4 px-2 text-black bg-white rounded-lg mt-4 w-32'>
-                                <Link to='' className='block text-sm mb-2 hover:bg-slate-300 transition-all rounded-lg text-center'>WebIt Templates</Link>
-                                <Link to='' className='block text-sm hover:bg-slate-300 transition-all rounded-lg text-center'>WebIt Blog</Link>
-                            </div> : null }
+    { show1 === false ? null :  <div className='absolute w-auto py-4 px-2 text-black bg-white rounded-lg mt-4 w-32'>
+                                    <Link to='' className='block text-sm mb-2 hover:bg-slate-300 transition-all rounded-lg text-center'>WebIt Templates</Link>
+                                    <Link to='' className='block text-sm hover:bg-slate-300 transition-all rounded-lg text-center'>WebIt Blog</Link>
+                                </div>}
                         </div>
                     </div>
                     
@@ -48,11 +48,11 @@ const NavigationBar = () => {
                         <div className='py-1 text-white pr-3 pl-10 lg:text-base text-sm not-italic font-medium' onClick={show2Toggle}>
                             Resources
                             <FontAwesomeIcon icon={faCaretDown} className='text-white px-3' />
-                            { show2 === false ?<div className='block absolute w-auto py-4 px-2 text-black bg-white rounded-lg mt-4 w-32'>
-                                <Link to='/contact-us' className='block text-sm mb-2 hover:bg-slate-300 transition-all rounded-lg text-center active:'>Contact Center</Link>
-                                <Link to='/feedback-hub' className='block text-sm mb-2 hover:bg-slate-300 transition-all rounded-lg text-center'>Feedback Hub</Link>
-                                <Link to='' className='block text-sm hover:bg-slate-300 transition-all rounded-lg text-center'>FAQs</Link>
-                            </div> : null }
+    { show2 === false ? null :  <div className='absolute w-auto py-4 px-2 text-black bg-white rounded-lg mt-4 w-32'>
+                                    <Link to='/contact-us' className='block text-sm mb-2 hover:bg-slate-300 transition-all rounded-lg text-center active:'>Contact Center</Link>
+                                    <Link to='/feedback-hub' className='block text-sm mb-2 hover:bg-slate-300 transition-all rounded-lg text-center'>Feedback Hub</Link>
+                                    <Link to='' className='block text-sm hover:bg-slate-300 transition-all rounded-lg text-center'>FAQs</Link>
+                                </div>}
                         </div>
                     </div>
                 </div>
