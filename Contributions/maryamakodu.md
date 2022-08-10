@@ -1,0 +1,1 @@
+-[worked on typography guide](https://www.figma.com/file/Uli9IZeFBp4ZlCe46ui6dI/Team-17_my_cms?node-id=153%3A7)
