@@ -14,6 +14,8 @@ class User (AbstractUser):
 class Template(models.Model):
     name = models.CharField(max_length=200, null=True)
     image = models.ImageField(upload_to = 'img')
+    html = models.TextField()
+    css = models.TextField()
     description = models.CharField(max_length=200, null=True, blank=True)
     date_created = models.DateTimeField(auto_now_add=True, null=True)
     
