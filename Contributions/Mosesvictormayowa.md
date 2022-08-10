@@ -2,4 +2,4 @@
 - [Worked on the Dashboard Template landing page](https://www.figma.com/file/Uli9IZeFBp4ZlCe46ui6dI/Team-17_my_cms?node-id=2343%3A5405)
 - [I also worked on the Template Customization sample](https://www.figma.com/file/Uli9IZeFBp4ZlCe46ui6dI/Team-17_my_cms?node-id=2343%3A5433)
 - [I Also created the Spacers in the style guild](https://www.figma.com/file/Uli9IZeFBp4ZlCe46ui6dI/Team-17_my_cms?node-id=23%3A2)
-- (https://github.com/mayovic/Proj_team_17_my_cms/blob/main/Design/Dashboard%20Template%20Unauthenticated%20User.png) (https://github.com/mayovic/Proj_team_17_my_cms/blob/main/Design/Dashboard%20Template%20landing%20page.png) (https://github.com/mayovic/Proj_team_17_my_cms/blob/main/Design/Template%20Customization%20sample.png)
+- [(https://github.com/mayovic/Proj_team_17_my_cms/blob/main/Design/Dashboard%20Template%20Unauthenticated%20User.png) (https://github.com/mayovic/Proj_team_17_my_cms/blob/main/Design/Dashboard%20Template%20landing%20page.png) (https://github.com/mayovic/Proj_team_17_my_cms/blob/main/Design/Template%20Customization%20sample.png)]
