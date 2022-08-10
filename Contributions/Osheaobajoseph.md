@@ -1,3 +1,3 @@
 - [created github repo] (https://github.com/zuri-training/Proj_team_17_my_cms)
 - [assigned issues to team members] (https://github.com/zuri-training/Proj_team_17_my_cms/issues)
-- [added mySQL database] ()
+- [added mySQL database] (https://github.com/zuri-training/Proj_team_17_my_cms/blob/main/Backend/web_maker/web_maker/settings.py)
