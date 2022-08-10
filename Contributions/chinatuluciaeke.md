@@ -1,0 +1,6 @@
+- [Create sub folders for the repository](https://github.com/zuri-training/Proj_team_17_my_cms/commit/fdeece7f232b5d8b1ec6709fc01963b866e69fe8)
+- [Create accounts app](https://github.com/zuri-training/Proj_team_17_my_cms/commit/dad57561c12255ac26c968db4ef678114f9cb8ff)
+- [Add react folders](https://github.com/zuri-training/Proj_team_17_my_cms/commit/cbac8723d5529bad4304ac25f3519066ea5c6dec)
+- [Build user authentication](https://github.com/zuri-training/Proj_team_17_my_cms/commit/8ee46ac92fb6eacf9ad009c7098112c74885f09c)
+- [Modify user authentication](https://github.com/zuri-training/Proj_team_17_my_cms/commit/110a4333381eeb93a990e26a4ee403b5fa995216)
+- [Add steps for running backend folder](https://github.com/zuri-training/Proj_team_17_my_cms/commit/df4456c3f6d7b561b86274715eadfc7c1485bb87)

@@ -1,0 +1,5 @@
+- [Worked on project documentation](https://docs.google.com/document/d/1QcRuKKh-H820re8t0NY9Rf9wGXVA_yY7LYIW_ivLpyY/edit)
+- [Worked on active members and assigned tasks list](https://docs.google.com/spreadsheets/d/1OhgptYtAjZZTQdHJEXoNbr9gJol6QgNZnJPQheVJ6vI/edit)
+- [Helped fix node modules dir and double gitignore files issues](https://github.com/zuri-training/Proj_team_17_my_cms/commit/0347ce7941a2ace900185bc481b5a522a696bb32)
+- [Helped with paths to login and signup pages, and also api paths](https://github.com/zuri-training/Proj_team_17_my_cms/commit/d3a7f6f2a7cf970ef5ae13d614fc1d65d6d63904)
+- [Worked on documentation of the project in repository README.md](https://github.com/zuri-training/Proj_team_17_my_cms/commit/4501d2e21db232ef622467cd919e5bdb5f0b342a)

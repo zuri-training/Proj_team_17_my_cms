@@ -1,14 +1,13 @@
 import React from 'react';
 
 import NavigationBar from '../components/layout/NavigationBar';
-import GetStarted from '../components/general/GetStarted';
-import BrowseTemplates from '../components/general/BrowseTemplates';
-import ViewInsights from '../components/general/ViewInsights';
-import ChooseDomain from '../components/general/ChooseDomain';
-import LinkAccount from '../components/general/LinkAccount';
-import CreateWebsite from '../components/general/CreateWebsite';
+import GetStarted from '../components/layout/GetStarted';
+import BrowseTemplates from '../components/layout/BrowseTemplates';
+import ViewInsights from '../components/layout/ViewInsights';
+import ChooseDomain from '../components/layout/ChooseDomain';
+import LinkAccount from '../components/layout/LinkAccount';
+import CreateWebsite from '../components/layout/CreateWebsite';
 import Footer from '../components/layout/Footer';
-import '../index.css';
 
 
 const LandingPage = () => {

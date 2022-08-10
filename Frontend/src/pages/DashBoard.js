@@ -38,7 +38,7 @@ const DashBoard = () => {
           
        </div>
        <div className="flex flex-col  justify-center items-center ">
-       <img src={nopost} alt="nopost" img/>
+       <img src={nopost} alt="nopost" />
        <div className="w-[173px] text-lg text-white  h-[56px] bg-[#402A2E] flex items-center justify-center gap-3">
               <FontAwesomeIcon icon={faPlus} />
               <h1>New Post</h1>
