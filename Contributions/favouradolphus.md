@@ -1,1 +1,3 @@
--[worked on domain](https://www.figma.com/file/Uli9IZeFBp4ZlCe46ui6dI/Team-17_my_cms?node-id=2326%3A4851)
+- [Worked on domain new user design](https://www.figma.com/file/Uli9IZeFBp4ZlCe46ui6dI/Team-17_my_cms?node-id=2326%3A4851)
+- [Worked on forgot password page design](https://www.figma.com/file/Uli9IZeFBp4ZlCe46ui6dI/Team-17_my_cms?node-id=2326%3A4851)
+- [Worked on error page design](https://www.figma.com/file/Uli9IZeFBp4ZlCe46ui6dI/Team-17_my_cms?node-id=2326%3A4851)
