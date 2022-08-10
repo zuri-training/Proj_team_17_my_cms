@@ -2,11 +2,14 @@ from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from . serializers import UserRegisterSerializer, UserLoginSerializer, UserProfileSerializer, PasswordResetEmailViewSerializer, PasswordResetSerializer 
+from . serializers import  UserRegisterSerializer, UserLoginSerializer, UserProfileSerializer, PasswordResetEmailViewSerializer, PasswordResetSerializer 
 from django.contrib.auth import authenticate
 from . renderers import UserRenderer
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import IsAuthenticated
+
+
+
 
 # Create your views here.
 # The index view, which is the view that leads to the first page of the site.
@@ -22,6 +25,7 @@ def get_tokens_for_user(user):
     }
 
 #Register user with all field values expected
+
 class RegisterView(APIView):
     renderer_classes = [UserRenderer]
     def post(self, request):
@@ -45,7 +49,7 @@ class LoginView(APIView):
             return Response({'token':token, 'msg': 'Login Successful'},
             status=status.HTTP_200_OK)
         else: 
-            return Response({'errors': {'non_field_errors': ['Username or Password is invalid']}}, status=statusHTTP_404_NOT_FOUND)
+            return Response({'errors': {'non_field_errors': ['Username or Password is invalid']}}, status=status.HTTP_404_NOT_FOUND)
 
 #get a the logged in user (name, username and email)
 class ProfileView(APIView):
@@ -71,4 +75,6 @@ class PasswordResetView(APIView):
         serializer = PasswordResetSerializer(data=request.data, context={'uid':uid, 'token':token})
         serializer.is_valid(raise_exception=True)
         return Response({'msg':'Password Reset Successful'}, status=status.HTTP_200_OK)
+
+
         

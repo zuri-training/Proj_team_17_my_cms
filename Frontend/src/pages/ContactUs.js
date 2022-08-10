@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../components/general/Button';
+
 
 const ContactUs = () => {
   return (
@@ -17,20 +17,20 @@ const ContactUs = () => {
               <div className=" w-[481px] mb-6">
                 <label htmlFor="fn-input" className="block mb-2 text-sm font-medium  text-black">First Name</label>
                 <input
-                  type="email"
+                  type="text"
                   id="fn-input"
                   placeholder="John"
-                  className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20 " 
+                  className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12 " 
                   required
                 />
               </div>
               <div className=" w-[481px] mb-6">
                 <label htmlFor="ln-input" className="block mb-2 text-sm font-medium  text-black">Last Name</label>
                 <input
-                  type="email"
+                  type="text"
                     id="ln-input"
                   placeholder="Doe"
-                  className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20 " 
+                  className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12 " 
                   required
                 />
               </div>
@@ -40,7 +40,7 @@ const ContactUs = () => {
                   type="email"
                   id="em-input"
                   placeholder="johndoe@example.com"
-                  className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20 " 
+                  className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12 " 
                   required
                 />
               </div>
@@ -59,7 +59,7 @@ const ContactUs = () => {
                   required
                 >
                 </textarea>
-                <Button name='Send Message' />
+                <button type="submit" className='colorbtn-bg py-3 px-6 lg:text-base text-sm not-italic font-medium rounded cursor-pointer'>Send Message</button>
               </div>
             </div>
           </form>

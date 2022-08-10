@@ -10,10 +10,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+from datetime import timedelta
 from pathlib import Path
 from decouple import config
 import os
-from datetime import timedelta
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',
-    'rest_framework',
     'rest_framework_simplejwt',
+    'rest_framework',
     'corsheaders',
     'accounts.apps.AccountsConfig',
     
@@ -58,6 +58,7 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
+    
 }
 
 
@@ -71,6 +72,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
+    
     'corsheaders.middleware.CorsMiddleware',
 ]
 
@@ -101,8 +103,21 @@ WSGI_APPLICATION = 'web_maker.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'webit',
+        'USER': 'root',
+        'PASSWORD': 'Epi=phany2',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        'OPTIONS': {
+           'charset' : 'utf8',
+            'use_unicode' : True,
+             'init_command': 'SET '
+                'character_set_connection=utf8,'
+                'collation_connection=utf8_bin',
+        }, 
+        'TEST_CHARSET': 'utf8,',
+        'TEST_COLLATION': 'utf8_unicode_ci',
     }
 }
 
@@ -151,6 +166,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Linked static files from the frontend
 STATICFILES_DIRS = [os.path.join(BASE_DIR, '../../Frontend/build/static')]
 
+
 AUTH_USER_MODEL = 'accounts.User'
 
 # Email Configuration
@@ -181,7 +197,10 @@ SIMPLE_JWT = {
 
 }
 
-PASSWORD_RESET_TIMEOUT=900          # 900 Sec = 15 min
+PASSWORD_RESET_TIMEOUT=900
+
+
+
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
