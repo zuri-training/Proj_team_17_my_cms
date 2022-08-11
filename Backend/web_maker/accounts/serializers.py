@@ -1,7 +1,7 @@
 from xml.dom import ValidationErr
 from django.forms import ValidationError
 from rest_framework import serializers
-from  .models import User
+from  .models import User, ContactUs
 from django.utils.encoding import smart_str, force_bytes, DjangoUnicodeDecodeError
 from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
@@ -86,3 +86,8 @@ class PasswordResetSerializer(serializers.ModelSerializer):
             PasswordResetTokenGenerator().check_token(user, token)
             raise ValidationError('Token is not valid or expired')
 
+
+class ContactUsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ContactUs
+        fields = ['id', 'first_name', 'last_name', 'email', 'message']

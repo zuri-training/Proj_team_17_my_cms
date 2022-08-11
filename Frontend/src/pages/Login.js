@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEyeSlash, faEye, faArrowAltCircleLeft } from '@fortawesome/free-regular-svg-icons';
+import { faEyeSlash, faEye } from '@fortawesome/free-regular-svg-icons';
 import login from '../assets/img/rafiki.svg';
 import { Link, useNavigate } from 'react-router-dom';
 import { useLoginUserMutation } from '../services/userAuthApi';
@@ -55,9 +55,7 @@ const Login = () => {
     <>
       <div className='cms-bg flex items-center h-screen'>
         <div className='w-1/2'>
-          <div className='inline-flex justify-start w-full cursor-pointer'>
-            <FontAwesomeIcon icon={faArrowAltCircleLeft} className='ml-10' />
-          </div>
+  
           <h1 className="text-center mb-12 font-semibold overflow-hidden text-4xl">Login</h1>
           {error && <p className='text-center text-red-600'>{error}</p>}
 
@@ -122,7 +120,7 @@ const Login = () => {
                 </div>
               </div>
 
-              <button disabled={loading} className="btn-bg rounded-md font-semibold w-[481px] h-12 bg-gray-400 mt-6 flex items-center justify-center">Login</button>
+              <button disabled={loading} className="colorbtn-bg rounded-md font-semibold w-[481px] h-12 bg-gray-400 mt-6 flex items-center justify-center">Login</button>
 
               <div className="flex items-center justify-center flex-col">
                 <div className="pt-3">
