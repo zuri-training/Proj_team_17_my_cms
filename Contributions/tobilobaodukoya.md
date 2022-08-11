@@ -1,3 +1,4 @@
+- [Worked on the Contact Us page (Backend)](https://github.com/zuri-training/Proj_team_17_my_cms/commit/d78cf6bb051942d827680da50f41230f8b989b06)
 - [Worked on project documentation](https://docs.google.com/document/d/1QcRuKKh-H820re8t0NY9Rf9wGXVA_yY7LYIW_ivLpyY/edit)
 - [Worked on active members and assigned tasks list](https://docs.google.com/spreadsheets/d/1OhgptYtAjZZTQdHJEXoNbr9gJol6QgNZnJPQheVJ6vI/edit)
 - [Helped fix node modules dir and double gitignore files issues](https://github.com/zuri-training/Proj_team_17_my_cms/commit/0347ce7941a2ace900185bc481b5a522a696bb32)
