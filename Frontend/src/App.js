@@ -6,6 +6,8 @@ import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
 import ContactUs from "./pages/ContactUs";
 import DashBoard from "./pages/DashBoard";
+import DomainNewUser from "./pages/DomainNewUser";
+import DomainExistingUser from "./pages/DomainExistingUser";
 
 import Template1 from "./Templates/Template";
 import AboutUs from "./pages/AboutUs";
@@ -27,6 +29,8 @@ function App() {
         <Route path="dashboard" element={access_token ? <DashBoard/> : <Navigate to='/login' />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/feedback-hub" element={<FeedBackPage />} />
+        <Route path="/domian-new-user" element={<DomainNewUser />} />
+        <Route path="/domian-existing-user" element={<DomainExistingUser />} />
         
         <Route path="/template1" element={<Template1 />} />
         
