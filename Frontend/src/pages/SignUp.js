@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from 'react';
 import { faEyeSlash, faEye } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import signup from '../assets/img/pana.svg';
@@ -7,10 +7,45 @@ import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const [open, setOpen] = useState(false);
-
   const toggle = () => {
     setOpen(!open);
   };
+
+
+  const [name, setName] = useState("");
+  const [userName, setUserName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password,setPassword] = useState("");
+
+
+  const handleInputChange = (e) => {
+    const {id , value} = e.target;
+    if(id === "name"){
+      setName(value);
+    }
+    if(id === "userName"){
+      setUserName(value);
+    }
+    if(id === "email"){
+      setEmail(value);
+    }
+    if(id === "password"){
+      setPassword(value);
+    }
+  }
+
+  const handleSubmit  = (e) => {
+    e.preventDefault();
+
+    if (name || userName || email || password === true) {
+      console.log('Form submitted: ' + name,userName,email,password);
+      setName(''); setUserName(''); setEmail(''); setPassword('');
+      return alert("You've signed up successfully. Proceed to login");
+    }
+    else {
+      return alert("Please fill out all fields")
+    }
+  }
 
   return (
     <div className="h-screen session-bg">
@@ -18,46 +53,59 @@ const SignUp = () => {
       <div className="w-1/2">
         <div className="flex items-center justify-center flex-col">
         
-          <form action="submit" method="post">
-        <h1 className=" mb-12  font-semibold overflow-hidden text-4xl color1">Sign Up</h1>
-            <div className="w-[481] mb-6 ">
-              <label htmlFor="name-input" className=" font-medium block mb-2 text-sm  text-black dark:text-gray-300">Name</label>
+          <form action="" method="POST">
+            <h1 className=" mb-12  font-semibold overflow-hidden text-4xl color1">Sign Up</h1>
+            <div className="w-[481px] mb-6 ">
+              <label htmlFor="name" className=" font-medium block mb-2 text-sm  text-black dark:text-gray-300">Name</label>
               <input
                 type="text"
-                id="name-input"
+                id="name"
+                value={name}
+                onChange = {(e) => handleInputChange(e)}
                 placeholder="John Doe"
-                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12  placeholder-gray-400  " required
+                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12" 
+                required
               />
             </div>
             <div className="w-[481px] mb-6">
-              <label htmlFor="usern-input" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Username</label>
+              <label htmlFor="userName" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Username</label>
               <input
                 type="text"
-                id="usern-input"
+                id="userName"
+                value={userName}
+                onChange = {(e) => handleInputChange(e)}
                 placeholder="johndoe"
-                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12   dark:placeholder-gray-400  " required
+                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12" 
+                required
               />
             </div>
             <div className=" w-[481px] mb-6">
-              <label htmlFor="email-input" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Email</label>
+              <label htmlFor="email" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Email</label>
               <input
                 type="email"
-                id="email-input"
+                id="email"
+                value={email}
+                onChange = {(e) => handleInputChange(e)}
                 placeholder="johndoe@example.com"
-                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12 dark:placeholder-gray-400  " required
+                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12" 
+                required
               />
-              <p className="invisible peer-invalid:visible text-red-700 font-light">
+              <p className="hidden peer-invalid:visible text-red-700 font-light">
                   Please enter a valid email address
               </p>
             </div>
             <div className="w-[481px] mb--6 mx-auto relative">
               <div className="w-full">
-                <label htmlFor="passw-input" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Password</label>
+                <label htmlFor="password" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Password</label>
                 <input
                   type={open === false ? "password" : "text"}
-                  id="passw-input"
+                  id="password"
+                  value={password}
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  onChange = {(e) => handleInputChange(e)}
                   placeholder="*********"
-                  className="h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12  dark:placeholder-gray-400  " required
+                  className="h-12 rounded-md mb-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-gray-500 block w-full p-2.5 pr-12" 
+                  required
                 />
               </div>
 
@@ -70,7 +118,7 @@ const SignUp = () => {
               </div>
             </div>
 
-            <button type="submit" className="btn-bg rounded-md font-semibold w-[481px] h-12 bg-gray-400 mt-6 flex items-center justify-center">Sign Up</button>
+            <button type="submit" onClick ={(e)=>handleSubmit(e)} className="colorbtn-bg rounded-md font-semibold w-[481px] h-12 bg-gray-400 mt-6 flex items-center justify-center">Sign Up</button>
           </form>
         
           <div className="flex items-center justify-center flex-col">
@@ -91,9 +139,9 @@ const SignUp = () => {
           </div>
         </div>
       </div>
-        <div className="mt-20">
+      <div className="mt-20">
         <img src={signup} alt="sign up img" />
-        </div>
+      </div>
       </div>
     </div>
     
