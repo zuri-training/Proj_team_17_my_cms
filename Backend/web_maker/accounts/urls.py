@@ -22,5 +22,6 @@ urlpatterns = [
     path('api/login', LoginView.as_view(), name='login'),
     path('api/profile', ProfileView.as_view(), name='profile'),
     path('api/reset-password-email', PasswordResetEmailView.as_view(), name='reset-password-email'),
-    path('api/reset-password/<uid>/<token>', PasswordResetView.as_view(), name='reset-password')
+    path('api/reset-password/<uid>/<token>', PasswordResetView.as_view(), name='reset-password'),
+    path('api/contact-us', ContactUsView.as_view(), name='contact-us')
 ]
