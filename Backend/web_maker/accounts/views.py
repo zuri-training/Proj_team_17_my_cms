@@ -12,6 +12,7 @@ from  .models import ContactUs
 
 
 
+
 # Create your views here.
 # The index view, which is the view that leads to the first page of the site.
 def index(request):
@@ -76,21 +77,6 @@ class PasswordResetView(APIView):
         serializer = PasswordResetSerializer(data=request.data, context={'uid':uid, 'token':token})
         serializer.is_valid(raise_exception=True)
         return Response({'msg':'Password Reset Successful'}, status=status.HTTP_200_OK)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 class ContactUsView(generics.ListCreateAPIView):

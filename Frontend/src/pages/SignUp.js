@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from 'react';
 import { faEyeSlash, faEye } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import signup from '../assets/img/pana.svg';
@@ -69,44 +69,48 @@ const SignUp = () => {
                 value={name}
                 onChange={({ target: { value } }) => setName(value)}
                 placeholder="John Doe"
-                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12  placeholder-gray-400  " required
+                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12" 
+                required
               />
             </div>
             <div className="w-[481px] mb-6">
-              <label htmlFor="usern-input" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Username</label>
+              <label htmlFor="userName" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Username</label>
               <input
                 type="text"
                 id="usern-input"
                 value={username}
                 onChange={({ target: { value } }) => setUsername(value)}
                 placeholder="johndoe"
-                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12   dark:placeholder-gray-400  " required
+                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12" 
+                required
               />
             </div>
             <div className=" w-[481px] mb-6">
-              <label htmlFor="email-input" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Email</label>
+              <label htmlFor="email" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Email</label>
               <input
                 type="email"
                 id="email-input"
                 value={email}
                 onChange={({ target: { value } }) => setEmail(value)}
                 placeholder="johndoe@example.com"
-                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12 dark:placeholder-gray-400  " required
+                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12" 
+                required
               />
-              <p className="invisible peer-invalid:visible text-red-700 font-light">
+              <p className="hidden peer-invalid:visible text-red-700 font-light">
                   Please enter a valid email address
               </p>
             </div>
             <div className="w-[481px] mb--6 mx-auto relative">
               <div className="w-full">
-                <label htmlFor="passw-input" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Password</label>
+                <label htmlFor="password" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Password</label>
                 <input
                   type={open === false ? "password" : "text"}
                   id="passw-input"
                   value={password}
                   onChange={({ target: { value } }) => setPassword(value)}
                   placeholder="*********"
-                  className="h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12  dark:placeholder-gray-400  " required
+                  className="h-12 rounded-md mb-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-gray-500 block w-full p-2.5 pr-12" 
+                  required
                 />
               </div>
 
@@ -119,7 +123,7 @@ const SignUp = () => {
               </div>
             </div>
 
-            <button disabled={loading} type="submit" className="btn-bg rounded-md font-semibold w-[481px] h-12 bg-gray-400 mt-6 flex items-center justify-center">Sign Up</button>
+            <button disabled={loading} type="submit" className="colorbtn-bg rounded-md font-semibold w-[481px] h-12 bg-gray-400 mt-6 flex items-center justify-center">Sign Up</button>
           </form>
         
           <div className="flex items-center justify-center flex-col">
@@ -140,9 +144,9 @@ const SignUp = () => {
           </div>
         </div>
       </div>
-        <div className="mt-20">
+      <div className="mt-20">
         <img src={signup} alt="sign up img" />
-        </div>
+      </div>
       </div>
     </div>
     
