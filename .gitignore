@@ -55,6 +55,9 @@ coverage.xml
 *.mo
 *.pot
 
+# Django Database
+my.cnf
+
 # Django stuff:
 *.log
 local_settings.py
@@ -150,8 +153,4 @@ node_modules/
 
 npm-debug.log*
 yarn-debug.log*
-<<<<<<< HEAD
 yarn-error.log*
-=======
-yarn-error.log*
->>>>>>> 23d3410ea38b9a434182334253eb8dc4dab1fc31
