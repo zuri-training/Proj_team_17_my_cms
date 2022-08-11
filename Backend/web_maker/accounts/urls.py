@@ -1,6 +1,6 @@
 from django.urls import path, re_path
 from . import views
-from .views import RegisterView, LoginView, ProfileView, PasswordResetEmailView, PasswordResetView #SaveTemplate
+from .views import RegisterView, LoginView, ProfileView, PasswordResetEmailView, PasswordResetView, ContactUsView #SaveTemplate
 
 app_name = 'accounts'
 

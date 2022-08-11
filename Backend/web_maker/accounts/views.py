@@ -1,12 +1,13 @@
 from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework import status
-from . serializers import  UserRegisterSerializer, UserLoginSerializer, UserProfileSerializer, PasswordResetEmailViewSerializer, PasswordResetSerializer 
+from rest_framework import status, generics
+from . serializers import UserRegisterSerializer, UserLoginSerializer, UserProfileSerializer, PasswordResetEmailViewSerializer, PasswordResetSerializer, ContactUsSerializer
 from django.contrib.auth import authenticate
 from . renderers import UserRenderer
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import IsAuthenticated
+from  .models import ContactUs
 
 
 
@@ -77,4 +78,21 @@ class PasswordResetView(APIView):
         return Response({'msg':'Password Reset Successful'}, status=status.HTTP_200_OK)
 
 
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class ContactUsView(generics.ListCreateAPIView):
+    queryset = ContactUs.objects.all()
+    serializer_class = ContactUsSerializer
