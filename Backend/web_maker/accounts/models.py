@@ -39,4 +39,30 @@ class Website(models.Model):
     def __str__(self):
         return self.name
 
-    
+
+
+class ContactUs(models.Model):
+    first_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
+    email = models.EmailField()
+    message =  models.TextField()
+    date_created = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.first_name + self.last_name
+
+    def save(self, *args, **kwargs):
+        send_mail(
+            'Subject here',
+            'Here is d message.',
+            'noreply@tobilobaoduk.com',
+            ['tobilobaoduk@gmail.com'],
+            fail_silently=False,
+            html_message=f'<h3>From: {self.first_name} {self.last_name}</h3><p><b>Message:</b> {self.message}</p>'
+        )
+
+        return super(ContactUs, self).save(*args, **kwargs)
+
+    class Meta:
+        ordering = ['-date_created']
+        verbose_name_plural = 'contacts'
