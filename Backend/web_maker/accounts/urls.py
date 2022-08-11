@@ -15,7 +15,27 @@ urlpatterns = [
     path('about-us', views.index),
     path('feedback-hub', views.index),
     path('template1', views.index),
-    path('error', views.index),
+    path('posts', views.index),
+    path('templates', views.index),
+    path('accounts', views.index),
+    path('pages', views.index),
+    path('insight', views.index),
+    path('view-page', views.index),
+    path('settings', views.index),
+    path('editor', views.index),
+    path('blog', views.index),
+    path('cms', views.index),
+    path('faq', views.index),
+    path('contact-us', views.index),
+    path('docs', views.index),
+    path('feedback-hub', views.index),
+    path('terms-of-service', views.index),
+    path('privacy-policy', views.index),
+    path('twitter', views.index),
+    path('facebook', views.index),
+    path('linkedin', views.index),
+    
+
     
     
     path('api/register', RegisterView.as_view(), name='register'),
