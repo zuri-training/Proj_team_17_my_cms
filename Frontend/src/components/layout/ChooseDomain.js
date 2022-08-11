@@ -13,7 +13,7 @@ const ChooseDomain = () => {
             <h2 className='arima-heading text-5xl not-italic mb-8 max-w-xl leading-tight overflow-hidden text-center font-medium text-gray-800'>
               Choose an appropriate domain name according to your preference
             </h2>
-            <Link to=''><button className='colorbtn-bg py-3 px-6 lg:text-base text-sm not-italic font-medium rounded cursor-pointer'>Choose Domain</button></Link>
+            <Link to='/domian-new-user'><button className='colorbtn-bg py-3 px-6 lg:text-base text-sm not-italic font-medium rounded cursor-pointer'>Choose Domain</button></Link>
         </div>
     </section>
   );
