@@ -1,16 +1,55 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEyeSlash, faEye, faArrowAltCircleLeft } from '@fortawesome/free-regular-svg-icons';
 import login from '../assets/img/rafiki.svg';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useLoginUserMutation } from '../services/userAuthApi';
+import { getToken, storeToken } from '../services/LocalStorageService';
+import { setUserToken } from '../features/authSlice';
+import { useDispatch } from 'react-redux'
 
 
 const Login = () => {
   const [open, setOpen] = useState(false);
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false)
+  const [username, setUsername] = useState('')
+  const [password, setPassword] = useState('')
+  const [loginUser, {isLoading}] = useLoginUserMutation();
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
 
   const toggle = () => {
     setOpen(!open);
   };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      setLoading(true)
+      const user = {
+        username: username.trim(),
+        password: password.trim()
+      }
+      const res = await loginUser(user);
+      console.log(res.data)
+      storeToken(res.data.token)
+      let { access_token } = getToken()
+      dispatch(setUserToken({ access_token: access_token }))
+      navigate('/dashboard')
+      
+
+    } catch (error) {
+      setError('Failed to sign in')
+      console.log(error)
+    }
+    setLoading(false)
+  }
+  
+  let { access_token } = getToken()
+  useEffect(() => {
+    dispatch(setUserToken({ access_token: access_token }))
+  }, [access_token, dispatch])
 
   return (
     <>
@@ -20,9 +59,10 @@ const Login = () => {
             <FontAwesomeIcon icon={faArrowAltCircleLeft} className='ml-10' />
           </div>
           <h1 className="text-center mb-12 font-semibold overflow-hidden text-4xl">Login</h1>
+          {error && <p className='text-center text-red-600'>{error}</p>}
 
           <div className='flex items-center justify-center flex-col'>
-            <form action="submit" method="post">
+            <form onSubmit={handleSubmit}>
               <input type="hidden" name="remember" defaultValue="true" />
               <div className="">
                 <div className='mb-8'>
@@ -31,6 +71,8 @@ const Login = () => {
                     id="username"
                     name="username"
                     type="text"
+                    value={username}
+                    onChange={({ target: { value }}) => setUsername(value)}
                     required
                     className="h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12 "
                     placeholder="johndoe"
@@ -44,6 +86,8 @@ const Login = () => {
                     id="password"
                     name="password"
                     type={open === false ? "password" : "text"}
+                    value={password}
+                    onChange={({ target: { value }}) => setPassword(value)}
                     autoComplete="current-password"
                     required
                     className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12 "
@@ -78,7 +122,7 @@ const Login = () => {
                 </div>
               </div>
 
-              <button className="btn-bg rounded-md font-semibold w-[481px] h-12 bg-gray-400 mt-6 flex items-center justify-center">Login</button>
+              <button disabled={loading} className="btn-bg rounded-md font-semibold w-[481px] h-12 bg-gray-400 mt-6 flex items-center justify-center">Login</button>
 
               <div className="flex items-center justify-center flex-col">
                 <div className="pt-3">

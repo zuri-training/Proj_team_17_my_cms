@@ -2,50 +2,55 @@ import React, { useState } from 'react';
 import { faEyeSlash, faEye } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import signup from '../assets/img/pana.svg';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useRegisterUserMutation } from "../services/userAuthApi";
+import { storeToken } from "../services/LocalStorageService";
 
 
 const SignUp = () => {
   const [open, setOpen] = useState(false);
+  const [username, setUsername] = useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false)
+  const navigate = useNavigate();
+
+
+  const [server_error, setServerError] = useState();
+  const [registerUser, { isLoading }] = useRegisterUserMutation()
+
+
   const toggle = () => {
     setOpen(!open);
   };
 
-
-  const [name, setName] = useState("");
-  const [userName, setUserName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password,setPassword] = useState("");
-
-
-  const handleInputChange = (e) => {
-    const {id , value} = e.target;
-    if(id === "name"){
-      setName(value);
-    }
-    if(id === "userName"){
-      setUserName(value);
-    }
-    if(id === "email"){
-      setEmail(value);
-    }
-    if(id === "password"){
-      setPassword(value);
-    }
-  }
-
-  const handleSubmit  = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    try {
+      setLoading(true)
+      const user = {
+        name: name.trim(),
+        email: email.trim(),
+        username: username.trim(),
+        password: password.trim()
+      }
+      const res = await registerUser(user);
+      console.log(res.data);
+      storeToken(res.data.token)
+      navigate('/dashboard')
+      
 
-    if (name || userName || email || password === true) {
-      console.log('Form submitted: ' + name,userName,email,password);
-      setName(''); setUserName(''); setEmail(''); setPassword('');
-      return alert("You've signed up successfully. Proceed to login");
+    } catch (error) {
+    
+      setServerError('Failed to create an account')
     }
-    else {
-      return alert("Please fill out all fields")
-    }
+    setLoading(false)
   }
+
+
+    
+
 
   return (
     <div className="h-screen session-bg">
@@ -53,15 +58,16 @@ const SignUp = () => {
       <div className="w-1/2">
         <div className="flex items-center justify-center flex-col">
         
-          <form action="" method="POST">
-            <h1 className=" mb-12  font-semibold overflow-hidden text-4xl color1">Sign Up</h1>
-            <div className="w-[481px] mb-6 ">
-              <label htmlFor="name" className=" font-medium block mb-2 text-sm  text-black dark:text-gray-300">Name</label>
+          <form onSubmit={handleSubmit}>
+        <h1 className=" mb-12  font-semibold overflow-hidden text-4xl color1">Sign Up</h1>
+        {server_error && <p className='text-center text-red-600'>{server_error}</p>}
+            <div className="w-[481] mb-6 ">
+              <label htmlFor="name-input" className=" font-medium block mb-2 text-sm  text-black dark:text-gray-300">Name</label>
               <input
                 type="text"
-                id="name"
+                id="name-input"
                 value={name}
-                onChange = {(e) => handleInputChange(e)}
+                onChange={({ target: { value } }) => setName(value)}
                 placeholder="John Doe"
                 className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12" 
                 required
@@ -71,9 +77,9 @@ const SignUp = () => {
               <label htmlFor="userName" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Username</label>
               <input
                 type="text"
-                id="userName"
-                value={userName}
-                onChange = {(e) => handleInputChange(e)}
+                id="usern-input"
+                value={username}
+                onChange={({ target: { value } }) => setUsername(value)}
                 placeholder="johndoe"
                 className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12" 
                 required
@@ -83,9 +89,9 @@ const SignUp = () => {
               <label htmlFor="email" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Email</label>
               <input
                 type="email"
-                id="email"
+                id="email-input"
                 value={email}
-                onChange = {(e) => handleInputChange(e)}
+                onChange={({ target: { value } }) => setEmail(value)}
                 placeholder="johndoe@example.com"
                 className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12" 
                 required
@@ -99,10 +105,9 @@ const SignUp = () => {
                 <label htmlFor="password" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Password</label>
                 <input
                   type={open === false ? "password" : "text"}
-                  id="password"
+                  id="passw-input"
                   value={password}
-                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                  onChange = {(e) => handleInputChange(e)}
+                  onChange={({ target: { value } }) => setPassword(value)}
                   placeholder="*********"
                   className="h-12 rounded-md mb-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-gray-500 block w-full p-2.5 pr-12" 
                   required
@@ -118,7 +123,7 @@ const SignUp = () => {
               </div>
             </div>
 
-            <button type="submit" onClick ={(e)=>handleSubmit(e)} className="colorbtn-bg rounded-md font-semibold w-[481px] h-12 bg-gray-400 mt-6 flex items-center justify-center">Sign Up</button>
+            <button disabled={loading} type="submit" className="colorbtn-bg rounded-md font-semibold w-[481px] h-12 bg-gray-400 mt-6 flex items-center justify-center">Sign Up</button>
           </form>
         
           <div className="flex items-center justify-center flex-col">
