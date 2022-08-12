@@ -66,3 +66,14 @@ class ContactUs(models.Model):
     class Meta:
         ordering = ['-date_created']
         verbose_name_plural = 'Contacts'
+
+
+class Feedback(models.Model):
+    name = models.CharField(max_length = 200, help_text= 'Name of the sender')
+    email = models.EmailField(max_length = 200)
+    subject = models.CharField(max_length = 300)
+    message = models.TextField()
+    date_created  = models.DateTimeField(auto_now_add=True,null = True)
+    
+    def __str__(self):
+        return self.name
