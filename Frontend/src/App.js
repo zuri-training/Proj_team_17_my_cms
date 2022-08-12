@@ -8,12 +8,12 @@ import ContactUs from "./pages/ContactUs";
 import DashBoard from "./pages/DashBoard";
 import DomainNewUser from "./pages/DomainNewUser";
 import DomainExistingUser from "./pages/DomainExistingUser";
-
-import Template1 from "./Templates/Template";
+import TemplatesPage from "./pages/TemplatesPage";
 import AboutUs from "./pages/AboutUs";
 import FeedBackPage from "./pages/FeedBackPage";
 import Error from "./pages/Error";
 import { useSelector } from 'react-redux'
+
 
 
 function App() {
@@ -31,8 +31,7 @@ function App() {
         <Route path="/feedback-hub" element={<FeedBackPage />} />
         <Route path="/domian-new-user" element={<DomainNewUser />} />
         <Route path="/domian-existing-user" element={<DomainExistingUser />} />
-        
-        <Route path="/template1" element={<Template1 />} />
+        <Route path="/Templates" element={<TemplatesPage />} />
         
         <Route path="*" element={<Error/>} />
       </Routes>
