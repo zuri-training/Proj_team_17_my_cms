@@ -21,7 +21,29 @@ This application is aimed at helping bloggers and companies with little or no kn
 
 ### Introduction
 
-This markdown file contains all technical documentation related to the setup, deployment, update, and customization of the Web-It web application. 
+This markdown file contains all technical documentation related to the setup, deployment, update, and customization of the Web-It web application.
+
+### Features
+
+Web-It is a platform that allows you to spin up a basic website based on the available templates. Here is a list of its attributes:
+
+#### User: Unauthenticated -
+
+1. Visit the platform to view basic information about it
+2. View and interact with the documentation
+3. Register to set up a new website
+4. Setup the website by filling out some information
+5. Browse through available templates 
+
+#### User: Authenticated -
+
+1. Full access to the platform
+2. Access to the backend of the created website
+3. Ability to create more pages
+4. Ability to change the template
+5. Unique address
+6. Ability to add social media links
+
 
 ### Prerequisite 
 
