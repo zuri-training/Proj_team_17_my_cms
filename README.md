@@ -44,6 +44,11 @@ Web-It is a platform that allows you to spin up a basic website based on the ava
 5. Unique address
 6. Ability to add social media links
 
+### Technologies Used
+
+- Design: Figma and FigJam
+- Frontend: React, TailwindCSS, Flexbox, React Router, Font Awesome
+- Backend - Python, Django and Django REST Framework
 
 ### Prerequisite 
 
