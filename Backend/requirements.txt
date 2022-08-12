@@ -5,9 +5,9 @@ django-dotenv==1.4.2
 django-extensions==3.2.0
 djangorestframework==3.13.1
 djangorestframework-simplejwt==5.2.0
+mysqlclient==2.1.1
 Pillow==9.2.0
 python-decouple==3.6
 pytz==2022.1
-mysqlclient==1.4.0
 sqlparse==0.4.2
 tzdata==2022.1
