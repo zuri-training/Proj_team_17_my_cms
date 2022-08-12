@@ -2,12 +2,12 @@ from django.shortcuts import render
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status, generics
-from . serializers import UserRegisterSerializer, UserLoginSerializer, UserProfileSerializer, PasswordResetEmailViewSerializer, PasswordResetSerializer, ContactUsSerializer
+from . serializers import TemplateSerializer, UserRegisterSerializer, UserLoginSerializer, UserProfileSerializer, PasswordResetEmailViewSerializer, PasswordResetSerializer, ContactUsSerializer
 from django.contrib.auth import authenticate
 from . renderers import UserRenderer
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import IsAuthenticated
-from  .models import ContactUs
+from  .models import ContactUs, Template
 
 
 
@@ -82,3 +82,27 @@ class PasswordResetView(APIView):
 class ContactUsView(generics.ListCreateAPIView):
     queryset = ContactUs.objects.all()
     serializer_class = ContactUsSerializer
+
+class CreateTemplate(generics.CreateAPIView):
+    renderer_classes = [UserRenderer]
+    permission_classes = [IsAuthenticated]
+    queryset = Template.objects.all()
+    serializer_class = TemplateSerializer
+
+class TemplateDetail(generics.RetrieveAPIView):
+    renderer_classes = [UserRenderer]
+    permission_classes = [IsAuthenticated]
+    queryset = Template.objects.all()
+    serializer_class = TemplateSerializer
+
+class EditTemplate(generics.UpdateAPIView):
+    renderer_classes = [UserRenderer]
+    permission_classes = [IsAuthenticated]
+    queryset = Template.objects.all()
+    serializer_class = TemplateSerializer
+
+class DeleteTemplate(generics.RetrieveDestroyAPIView):
+    renderer_classes = [UserRenderer]
+    permission_classes = [IsAuthenticated]
+    queryset = Template.objects.all()
+    serializer_class = TemplateSerializer

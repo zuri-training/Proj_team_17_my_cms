@@ -1,7 +1,7 @@
 from xml.dom import ValidationErr
 from django.forms import ValidationError
 from rest_framework import serializers
-from  .models import User, ContactUs
+from  .models import Template, User, ContactUs
 from django.utils.encoding import smart_str, force_bytes, DjangoUnicodeDecodeError
 from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
@@ -91,3 +91,8 @@ class ContactUsSerializer(serializers.ModelSerializer):
     class Meta:
         model = ContactUs
         fields = ['id', 'first_name', 'last_name', 'email', 'message']
+        
+class TemplateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Template
+        fields = ['html','css','name','description']
