@@ -63,7 +63,7 @@ To install Web-It locally, you will need the following:
 The web application can be installed locally on a computer. The following installation guides will guide you step-by-step to create a new project and get it started.
 
 - Clone the repository in your local machine - `git clone https://github.com/zuri-training/Proj_team_17_my_cms.git`
-- Move into thr Backend folder
+- Move into the Backend folder
 - Create and activate a virtual environment
 - Install all dependencies in the requirements.txt file - `pip install -r requirements.txt`
 
