@@ -1,6 +1,6 @@
 from django.urls import path, re_path
 from . import views
-from .views import RegisterView, LoginView, ProfileView, PasswordResetEmailView, PasswordResetView, ContactUsView, CreateTemplate, EditTemplate, DeleteTemplate, TemplateDetail 
+from .views import RegisterView, LoginView, ProfileView, PasswordResetEmailView, PasswordResetView, ContactUsView, FeedbackView, CreateTemplate, EditTemplate, DeleteTemplate, TemplateDetail 
 
 app_name = 'accounts'
 
@@ -44,6 +44,7 @@ urlpatterns = [
     path('api/reset-password-email', PasswordResetEmailView.as_view(), name='reset-password-email'),
     path('api/reset-password/<uid>/<token>', PasswordResetView.as_view(), name='reset-password'),
     path('api/contact-us', ContactUsView.as_view(), name='contact-us'),
+    path('api/feedback', FeedbackView.as_view(),name='feedback'),
     path('api/createtemplate', CreateTemplate.as_view(), name="create_template"),
     path('api/deletetemplate/<int:pk>', DeleteTemplate.as_view(), name="create_template"),
     path('api/editTemplate/templatedetail/<int:pk>', TemplateDetail.as_view(), name="edittemplate_detail"),
