@@ -62,8 +62,8 @@ To install Web-It locally, you will need the following:
 
 The web application can be installed locally on a computer. The following installation guides will guide you step-by-step to create a new project and get it started.
 
+- Clone the repository in your local machine - `git clone https://github.com/zuri-training/Proj_team_17_my_cms.git`
+- Move into thr Backend folder
 - Create and activate a virtual environment
-- Install Django - `pip install django`
-- Create the project folder - `django-admin startproject cmsproject`
-- Move into the project folder and create the app - `python manage.py startapp cmsapp`
-- Install the app in the settings.py file that is in the main project directory 
+- Install all dependencies in the requirements.txt file - `pip install -r requirements.txt`
+
