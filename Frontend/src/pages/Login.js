@@ -7,6 +7,8 @@ import { useLoginUserMutation } from '../services/userAuthApi';
 import { getToken, storeToken } from '../services/LocalStorageService';
 import { setUserToken } from '../features/authSlice';
 import { useDispatch } from 'react-redux'
+import google from '../assets/img/download-4-removebg-preview 1.png'
+import apple from '../assets/img/image 1.png'
 
 
 const Login = () => {
@@ -132,11 +134,8 @@ const Login = () => {
                 <div className="mb-12">
                   <p className="mb-3">Continue with:</p>
                   <div className="flex items-center gap-9">
-                  <div className="w-8 h-8 bg-gray-400 rounded-full">
-                
-                  </div>
-                  <div className="w-8 h-8 bg-gray-400 rounded-full"></div>
-                  <div className="w-8 h-8 bg-gray-400 rounded-full"></div>
+                    <img className="w-8 h-8" src={google} alt='icn1' />
+                    <img className="w-8 h-8" src={apple} alt='icn1' />
                   </div>
                 </div>
               </div>

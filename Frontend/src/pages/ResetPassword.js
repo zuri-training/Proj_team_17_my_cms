@@ -1,47 +1,40 @@
 import React, {useState} from 'react';
 import forgotp from './../assets/img/forgotp-img.png';
-import{ useSendPasswordResetEmailMutation } from '../services/userAuthApi'
+import{ useResetPasswordMutation } from '../services/userAuthApi'
+import { useNavigate, useParams } from 'react-router-dom';
 
 
-
-const ForgotPassword = () => {
-
-
-    const [email, setEmail] = useState('')
-    
+const ResetPassword = () => {
+    const [password, setPassword] = useState('')
     const [server_error, setServerError] = useState({})
     const [server_msg, setServerMsg] = useState({})
-    const [sendPasswordResetEmail, { isLoading }] = useSendPasswordResetEmailMutation()
+    const [resetPassword] = useResetPasswordMutation()
+    const { uid, token } = useParams()
+    const navigate = useNavigate();
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async(e) => {
         e.preventDefault();
-
         try {
-        const user = {
-            email: email.trim(),
+        const actualData = {
+            password: password.trim(),
         }
-        const res = await sendPasswordResetEmail(user);
+        
+        const res = await resetPassword({ actualData, uid, token });
 
-        if (!res.data) {
-            throw res
-        }
-
-        console.log(typeof (res.data))
-        console.log(res.data)
         setServerError({})
         setServerMsg(res.data)
-        document.getElementById('password-reset-email-form').reset()
+        document.getElementById('password-reset-form').reset()
+        setTimeout(() => {
+            navigate('/login')
+        }, 3000)
+
         
     
         } catch (error) {
-        console.log(error)
-        console.log(typeof (error))
-        console.log(error.data)
+        console.log(error.data.errors)
         setServerMsg({})
         setServerError(error.data.errors)
         }
-
-        
     }
 
 
@@ -55,24 +48,24 @@ const ForgotPassword = () => {
             <h1 className="text-center mb-7 font-semibold overflow-hidden text-4xl">Forgot Password?</h1>
             <p className='text-center mb-9 not-italic text-base'>Oops! <br/> Don’t worry, we’ll help you get back in.</p>
             <div className='flex items-center justify-center flex-col'>
-                <form id='password-reset-email-form' onSubmit={handleSubmit} >
+                <form id='password-reset-form' onSubmit={handleSubmit} >
                     <div className=" w-[481px] mb-6">
                         <label htmlFor="forg-passw-input" className="block mb-2 text-sm font-medium  text-black">Enter your email address</label>
                         <input
-                            type="email"
+                            type="password"
                             id="forg-passw-input"
-                            value={email}
-                            onChange={({ target: { value }}) => setEmail(value)}
-                            placeholder="johndoe@example.com"
+                            value={password}
+                            onChange={({ target: { value }}) => setPassword(value)}
+                            placeholder="********"
                             className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-20" 
                             required
                         />
-                        {server_error.email ? <h2 style={{ fontSize: 12, color: 'red', paddingLeft: 10 }}>{server_error.email[0]}</h2> : ""}
+                        {server_error.email ? <h2 style={{ fontSize: 12, color: 'red', paddingLeft: 10 }}>{server_error.password[0]}</h2> : ""}
                     </div>
                     <button type="submit" className="colorbtn-bg rounded-md font-semibold w-[481px] h-12 bg-gray-400 mt-6 flex items-center justify-center">
-                        Send password recovery link
+                        Reset Password
                     </button>
-                    {server_error.non_field_errors ? <h2 className='text-red-500'>{server_error.non_field_errors[0]}</h2> : ''}
+                    {server_error.password ? <h2 className='text-red-500'>{server_error.non_field_errors[0]}</h2> : ''}
                     {server_msg? <h2 className='text-green-400'>{server_msg.msg}</h2> : ''}
                 </form>
             </div>
@@ -81,4 +74,4 @@ const ForgotPassword = () => {
   );
 }
 
-export default ForgotPassword;
+export default ResetPassword;
