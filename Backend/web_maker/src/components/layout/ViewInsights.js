@@ -11,7 +11,7 @@ const ViewInsights = () => {
                 <p className='text-2xl not-italic mb-4 w-full font-medium'>Learn how your contents are performing. 
                     Get to understand what your audience wants per time
                 </p>
-                <Link to='' className='font-semibold'>View Insights →</Link>
+                <Link to='dashboard' className='font-semibold'>View Insights →</Link>
             </div>
             <div className='w-full h-auto'>
                 <img src={viewInsights} alt="view insights" className='viewInsights-img rounded-3xl inline-flex drop-shadow-lg shadow-lg translate-x-28 translate-y-12 origin-bottom -rotate-12' />

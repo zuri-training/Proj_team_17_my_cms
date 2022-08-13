@@ -5,6 +5,8 @@ import signup from '../assets/img/pana.svg';
 import { Link, useNavigate } from "react-router-dom";
 import { useRegisterUserMutation } from "../services/userAuthApi";
 import { storeToken } from "../services/LocalStorageService";
+import google from '../assets/img/download-4-removebg-preview 1.png'
+import apple from '../assets/img/image 1.png'
 
 
 const SignUp = () => {
@@ -136,9 +138,8 @@ const SignUp = () => {
             <div className="mb-12">
               <p className="mb-3">continue with:</p>
               <div className="flex items-center gap-9">
-                <div className="w-8 h-8 btn-bg rounded-full"></div>
-                <div className="w-8 h-8 btn-bg rounded-full"></div>
-                <div className="w-8 h-8 btn-bg rounded-full"></div>
+                <img className="w-8 h-8" src={google} alt='icn1' />
+                <img className="w-8 h-8" src={apple} alt='icn1' />
               </div>
             </div>
           </div>

@@ -14,7 +14,7 @@ const BrowseTemplates = () => {
                 <p className='text-2xl not-italic mb-4 w-full font-medium'>View and choose from an array of easily customizable 
                     templates and create yours
                 </p>
-                <Link to='' className='font-semibold color1'>Browse Templates →</Link>
+                <Link to='/Templates' className='font-semibold color1'>Browse Templates →</Link>
             </div>
             <div className=''>
                 <img src={browseTemp1} alt="browse template" className='browse-temp1-img inline-flex drop-shadow-lg shadow-2xl' />

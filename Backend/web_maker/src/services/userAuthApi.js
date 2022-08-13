@@ -52,7 +52,43 @@ export const userAuthApi = createApi({
         }
     }
    }),
+   resetPassword: builder.mutation({
+    query: ({ actualData, uid, token }) => {
+        return {
+            url: `reset-password/${uid}/${token}`,
+            method: 'POST',
+            body: actualData,
+            headers: {
+                'Content-type': 'application/json'
+            }
+        }
+    }
+   }),
+   createTemplate: builder.mutation({
+    query: (user) => {
+        return {
+            url: 'createtemplate',
+            method: 'POST',
+            body: user,
+            headers: {
+                'Content-type': 'application/json'
+            }
+        }
+    }
+   }),
+   deleteTemplate: builder.mutation({
+    query: (user) => {
+        return {
+            url: 'createtemplate',
+            method: 'DELETE',
+            body: user,
+            headers: {
+                'Content-type': 'application/json'
+            }
+        }
+    }
+   }),
   })
 })
 
-export const { useRegisterUserMutation, useLoginUserMutation, useGetLoggedUserQuery, useSendPasswordResetEmailMutation } = userAuthApi
+export const { useRegisterUserMutation, useLoginUserMutation, useGetLoggedUserQuery, useSendPasswordResetEmailMutation, useCreateTemplateMutation, useResetPasswordMutation } = userAuthApi

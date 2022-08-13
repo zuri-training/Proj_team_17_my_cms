@@ -5,7 +5,10 @@ django-dotenv==1.4.2
 django-extensions==3.2.0
 djangorestframework==3.13.1
 djangorestframework-simplejwt==5.2.0
+<<<<<<< HEAD
 gunicorn==20.1.0
+=======
+>>>>>>> 6875908e308fe1139c89322da768d95693b1b76a
 mysqlclient==2.1.1
 Pillow==9.2.0
 PyJWT==2.4.0
