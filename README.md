@@ -67,5 +67,6 @@ The web application can be installed locally on a computer. The following instal
 - Create and activate a virtual environment
 - Install all dependencies in the requirements.txt file - `pip install -r requirements.txt`
 - Move into the /web_maker/accounts directory and then make migrations (Ensure you have MySQL installed) - `python manage.py makemigrations`
-- Next, run the command - `python manage.py migrate` 
-- Finally, run the server with - `python manage.py runserver`
+- Next, run the command - `python manage.py migrate`
+- Also move into the Frontend folder, from the base directory and run the command - `npm create-react-scripts` and then run `npm run build`
+- Finally, move back into the Backend/web_maker/accounts directory and run the server with - `python manage.py runserver`
