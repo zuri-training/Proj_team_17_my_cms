@@ -82,7 +82,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         # linked the react template files to the django project
-        'DIRS': [os.path.join(BASE_DIR, '../../Frontend/build')],
+        'DIRS': [os.path.join(BASE_DIR, 'build')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -171,7 +171,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Linked static files from the frontend
-STATICFILES_DIRS = [os.path.join(BASE_DIR, '../../Frontend/build/static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'build/static')]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 #STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFileStorage'
