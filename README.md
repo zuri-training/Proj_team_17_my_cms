@@ -55,7 +55,7 @@ Web-It is a platform that allows you to spin up a basic website based on the ava
 ## Prerequisite 
 
 To install Web-It locally, you will need the following:
-- A computer running MacOS, Windows or Linux 
+- A computer running macOS, Windows or Linux 
 - Python or pip to manage packages 
 - A supported version of Django 
 - A clean empty directory on your machine 
@@ -70,7 +70,7 @@ git clone https://github.com/zuri-training/Proj_team_17_my_cms.git
 ```
 - Move into the **Backend** folder
 - Create a virtual environment - `python -m venv env`
-- Activate the virtual environment - `env\Scripts\activate`
+- Activate the virtual environment - `env\Scripts\activate` (for Windows) or `source env/bin/activate` (for macOS)
 - Install all dependencies in the requirements.txt file - `pip install -r requirements.txt`
 - Move into the **web_maker** folder and run the command - `npm create-react-scripts` and then run `npm run build`
 - Ensure you have MySQL installed for the database
