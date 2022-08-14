@@ -68,11 +68,12 @@ The web application can be installed locally on a computer. The following instal
 ```sh
 git clone https://github.com/zuri-training/Proj_team_17_my_cms.git
 ```
-- Move into the Backend folder
-- Create and activate a virtual environment
+- Move into the **Backend** folder
+- Create a virtual environment - `python -m venv env`
+- Activate the virtual environment - `env\Scripts\activate`
 - Install all dependencies in the requirements.txt file - `pip install -r requirements.txt`
-- Move into the /web_maker/accounts directory and then make migrations (ensure you have MySQL installed) - `python manage.py makemigrations`
+- Move into the **web_maker** folder and run the command - `npm create-react-scripts` and then run `npm run build`
+- From here, move into the **accounts** folder and then make migrations (ensure you have MySQL installed) - `python manage.py makemigrations`
 - Next, run the command - `python manage.py migrate`
-- Also move into the Frontend folder, from the base directory and run the command - `npm create-react-scripts` and then run `npm run build`
-- Finally, move back into the Backend/web_maker/accounts directory and run the server with - `python manage.py runserver`
-- Go to `http://127.0.0.1:8000/` to see the web application
+- Run the server with - `python manage.py runserver`
+- Finally, go to `http://127.0.0.1:8000/` to see the web application
