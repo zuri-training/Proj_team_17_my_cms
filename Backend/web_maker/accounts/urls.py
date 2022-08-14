@@ -34,6 +34,7 @@ urlpatterns = [
     path('twitter', views.index),
     path('facebook', views.index),
     path('linkedin', views.index),
+    path('Templates', views.index),
     
 
     
