@@ -12,7 +12,8 @@ import TemplatesPage from "./pages/TemplatesPage";
 import AboutUs from "./pages/AboutUs";
 import FeedBackPage from "./pages/FeedBackPage";
 import Error from "./pages/Error";
-import { useSelector } from 'react-redux'
+
+import { useSelector } from 'react-redux';
 
 
 
@@ -32,7 +33,8 @@ function App() {
         <Route path="/domian-new-user" element={<DomainNewUser />} />
         <Route path="/domian-existing-user" element={<DomainExistingUser />} />
         <Route path="/Templates" element={<TemplatesPage />} />
-        
+
+      
         <Route path="*" element={<Error/>} />
       </Routes>
     </>
