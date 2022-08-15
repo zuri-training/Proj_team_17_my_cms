@@ -138,4 +138,4 @@ git checkout -b <name-of-your-new-branch>
 - Wait for one of the administrators to review your pull request and merge
 
 ## Acknowledgement
-We would like to thank Ingressive For Good & the Zuri Team for this training and for everything that was put in place to make this a success. We have been pushed to do a lot during the course of this training, especially during this project phase. We are grateful for this opportunity that was given to learn, grow and also connect with other amazing designers, developers and mentors.
+We would like to thank [Ingressive For Good & the Zuri Team](https://training.zuri.team/) for this training and for everything that was put in place to make this a success. We have been pushed to do a lot during the course of this training, especially during this project phase. We are grateful for this opportunity that was given to learn, grow and also connect with other amazing designers, developers and mentors.
