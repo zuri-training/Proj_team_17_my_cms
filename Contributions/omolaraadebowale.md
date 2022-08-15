@@ -1,0 +1,1 @@
+- [created signup page](https://github.com/zuri-training/Proj_team_17_my_cms/commit/57b5b4fdb4833c65bcb551b74bf0e7678bae8927)

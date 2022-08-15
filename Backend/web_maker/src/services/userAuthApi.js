@@ -1,0 +1,94 @@
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
+
+// Define a service using a base URL and expected endpoints https://webm-maker.herokuapp.com http://127.0.0.1:8000
+export const userAuthApi = createApi({
+  reducerPath: 'pokemonApi',
+  baseQuery: fetchBaseQuery({ baseUrl: 'https://webm-maker.herokuapp.com/api/' }),
+  endpoints: (builder) => ({
+   registerUser: builder.mutation({
+    query: (user)=>{ console.log(user)
+        return{
+            url: 'register',
+            method: 'POST',
+            body: user,
+            headers: {
+                'Content-type': 'application/json',
+            }
+        }
+    }
+   }),
+   loginUser: builder.mutation({
+    query: (user)=>{ console.log(user)
+        return{
+            url: 'login',
+            method: 'POST',
+            body: user,
+            headers: {
+                'Content-type': 'application/json',
+            }
+        }
+    }
+   }),
+   getLoggedUser: builder.query({
+    query: (access_token)=>{
+        return{
+            url: 'profile',
+            method: 'GET',
+            headers: {
+                'authorization': `Bearer ${access_token}`,
+            }
+        }
+    }
+   }),
+   sendPasswordResetEmail: builder.mutation({
+    query: (user) => {
+        return {
+            url: 'reset-password-email',
+            method: 'POST',
+            body: user,
+            headers: {
+                'Content-type': 'application/json'
+            }
+        }
+    }
+   }),
+   resetPassword: builder.mutation({
+    query: ({ actualData, uid, token }) => {
+        return {
+            url: `reset-password/${uid}/${token}`,
+            method: 'POST',
+            body: actualData,
+            headers: {
+                'Content-type': 'application/json'
+            }
+        }
+    }
+   }),
+   createTemplate: builder.mutation({
+    query: (user) => {
+        return {
+            url: 'createtemplate',
+            method: 'POST',
+            body: user,
+            headers: {
+                'Content-type': 'application/json'
+            }
+        }
+    }
+   }),
+   deleteTemplate: builder.mutation({
+    query: (user) => {
+        return {
+            url: 'createtemplate',
+            method: 'DELETE',
+            body: user,
+            headers: {
+                'Content-type': 'application/json'
+            }
+        }
+    }
+   }),
+  })
+})
+
+export const { useRegisterUserMutation, useLoginUserMutation, useGetLoggedUserQuery, useSendPasswordResetEmailMutation, useCreateTemplateMutation, useResetPasswordMutation } = userAuthApi

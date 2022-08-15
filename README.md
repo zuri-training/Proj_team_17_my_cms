@@ -4,12 +4,14 @@
 ![Hex.pm](https://img.shields.io/hexpm/l/plug?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/zuri-training/Proj_team_17_my_cms?style=for-the-badge)
 
+<img src="https://drive.google.com/uc?export=view&id=1Kp_MdfR2UEcYqkzAZ4TbSu_rSjVm2srI" alt="First section of Web-It landing page" />
+
 ## Welcome to the repository of our Web-It web application.
 
 Web-It is a web application that helps users create, customize, manage, and modify content on a website without the need for specialized technical knowledge. In simpler words, it is a content management system that helps you build a website without needing to write all the code from scratch (or even know how to code at all).
 This application is aimed at helping bloggers and companies with little or no knowledge on how to create a website, create their own websites, depending on the use case. It is built on top of the Django framework
 
-## Links to necessary docs for our first presentation
+## Links to necessary documentations
 
 - [Link to our Documentation](https://docs.google.com/document/d/1QcRuKKh-H820re8t0NY9Rf9wGXVA_yY7LYIW_ivLpyY/edit?usp=sharing)
 - [Link to Google sheet of active members and assigned tasks](https://docs.google.com/spreadsheets/d/1OhgptYtAjZZTQdHJEXoNbr9gJol6QgNZnJPQheVJ6vI/edit?usp=sharing)
@@ -48,7 +50,7 @@ Web-It is a platform that allows you to spin up a basic website based on the ava
 
 - Design: Figma and FigJam
 - Frontend: React, TailwindCSS, Flexbox, React Router, Font Awesome
-- Backend - Python, Django and Django REST Framework
+- Backend - Python, Django, Django REST Framework and MySQL (database)
 
 ## Prerequisite 
 
@@ -66,4 +68,8 @@ The web application can be installed locally on a computer. The following instal
 - Move into the Backend folder
 - Create and activate a virtual environment
 - Install all dependencies in the requirements.txt file - `pip install -r requirements.txt`
-
+- Move into the /web_maker/accounts directory and then make migrations (ensure you have MySQL installed) - `python manage.py makemigrations`
+- Next, run the command - `python manage.py migrate`
+- Also move into the Frontend folder, from the base directory and run the command - `npm create-react-scripts` and then run `npm run build`
+- Finally, move back into the Backend/web_maker/accounts directory and run the server with - `python manage.py runserver`
+- Go to `http://127.0.0.1:8000/` to see the web application

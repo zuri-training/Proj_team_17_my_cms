@@ -1,0 +1,50 @@
+import { Routes, Route, Navigate } from "react-router-dom";
+
+import LandingPage from "./pages/LandingPage";
+import ForgotPassword from "./pages/ForgotPassword";
+import SignUp from "./pages/SignUp";
+import Login from "./pages/Login";
+import ContactUs from "./pages/ContactUs";
+import DashBoard from "./pages/DashBoard";
+import DomainNewUser from "./pages/DomainNewUser";
+import DomainExistingUser from "./pages/DomainExistingUser";
+import TemplatesPage from "./pages/TemplatesPage";
+import AboutUs from "./pages/AboutUs";
+import FeedBackPage from "./pages/FeedBackPage";
+import Error from "./pages/Error";
+<<<<<<< HEAD:Frontend/src/App.js
+
+import { useSelector } from 'react-redux';
+=======
+import ResetPassword from "./pages/ResetPassword";
+import { useSelector } from 'react-redux'
+>>>>>>> c53333cd9722cf026004336565d67a6456b5feca:Backend/web_maker/src/App.js
+
+
+
+function App() {
+  const { access_token } = useSelector(state=> state.auth)
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/forgot" element={<ForgotPassword />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="login" element={!access_token ? <Login /> : <Navigate to='/dashboard' />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="dashboard" element={access_token ? <DashBoard/> : <Navigate to='/login' />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/api/reset-password/<uid>/<token>" element={<ResetPassword />} />
+        <Route path="/feedback-hub" element={<FeedBackPage />} />
+        <Route path="/domian-new-user" element={<DomainNewUser />} />
+        <Route path="/domian-existing-user" element={<DomainExistingUser />} />
+        <Route path="/Templates" element={<TemplatesPage />} />
+
+      
+        <Route path="*" element={<Error/>} />
+      </Routes>
+    </>
+  );
+}
+
+export default App;
