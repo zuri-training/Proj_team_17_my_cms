@@ -13,13 +13,12 @@ This application is aimed at helping bloggers and companies with little or no kn
 
 ## Table of Contents
 
-* [Links to necessary documentations](#links-to-necessary-documentations)
-* [Introduction](#introduction)
-* [Features](#features)
-* [Technologies Used](#technologies-used)
-* [Prerequisite](#prerequisite)
-* [Setup and Instatllation](#setup-and-installation)
-* 
+1. [Links to necessary documentations](#links-to-necessary-documentations)
+2. [Introduction](#introduction)
+3. [Features](#features)
+4. [Technologies Used](#technologies-used)
+5. [Prerequisite](#prerequisite)
+6. [Setup and Instatllation](#setup-and-installation) 
 
 ## Links to necessary documentations
 
