@@ -13,26 +13,16 @@ This application is aimed at helping bloggers and companies with little or no kn
 
 ## Table of Contents
 
-1. [Links to necessary documentations](#links-to-necessary-documentations)
-2. [Introduction](#introduction)
-3. [Features](#features)
-4. [Technologies Used](#technologies-used)
-5. [Prerequisite](#prerequisite)
-6. [Setup and Instatllation](#setup-and-installation)
-7. [How To Contribute](#how-to-contribute)
-8. [Acknowlodgement](#acknowledgement)
-9. [Authors](#authors)
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [Prerequisite](#prerequisite)
+5. [Setup and Instatllation](#setup-and-installation)
+6. [How To Contribute](#how-to-contribute)
+7. [Acknowlodgement](#acknowledgement)
+8. [Authors](#authors)
+9. [Links to necessary documentations](#links-to-necessary-documentations)
 
-## Links to necessary documentations
-
-- [Link to our Documentation](https://docs.google.com/document/d/1QcRuKKh-H820re8t0NY9Rf9wGXVA_yY7LYIW_ivLpyY/edit?usp=sharing)
-- [Link to Google sheet of active members and assigned tasks](https://docs.google.com/spreadsheets/d/1OhgptYtAjZZTQdHJEXoNbr9gJol6QgNZnJPQheVJ6vI/edit?usp=sharing)
-- [Link to our Figma file](https://www.figma.com/file/Uli9IZeFBp4ZlCe46ui6dI/CMS?node-id=244%3A131)
-- [Link to our FigJam](https://www.figma.com/file/DxpCUvLWq0b07Bn63LtBwi/Untitled?node-id=0%3A1)
-- [Link to an extensive report on how our product designers created our designs](https://docs.google.com/document/d/1T8S4bTtX42IiN7-NCuHtfx58u-CFKKfx/edit?usp=sharing&ouid=115120354710465633047&rtpof=true&sd=true)
-- [Link to our Database Schema](https://www.figma.com/file/Yc6wSiRK9RwBwcHFr8ZqcM/cms-schema?node-id=0%3A1T)
-- [Link to our Presentation video](https://drive.google.com/file/d/1LUQruvH3ZXqwkxbltWtDIqWfstui_EBc/view?usp=sharing)
-- [Link to our Presentation slides](https://www.figma.com/file/Uli9IZeFBp4ZlCe46ui6dI/CMS?node-id=1000%3A2167)
 
 ## Introduction
 
@@ -143,3 +133,14 @@ We would like to thank [Ingressive For Good & the Zuri Team](https://training.zu
 
 ## Authors
 This a file containing the authors of this project repository - [AUTHORS](./AUTHORS)
+
+## Links to necessary documentations
+
+- [Link to our Documentation](https://docs.google.com/document/d/1QcRuKKh-H820re8t0NY9Rf9wGXVA_yY7LYIW_ivLpyY/edit?usp=sharing)
+- [Link to Google sheet of active members and assigned tasks](https://docs.google.com/spreadsheets/d/1OhgptYtAjZZTQdHJEXoNbr9gJol6QgNZnJPQheVJ6vI/edit?usp=sharing)
+- [Link to our Figma file](https://www.figma.com/file/Uli9IZeFBp4ZlCe46ui6dI/CMS?node-id=244%3A131)
+- [Link to our FigJam](https://www.figma.com/file/DxpCUvLWq0b07Bn63LtBwi/Untitled?node-id=0%3A1)
+- [Link to an extensive report on how our product designers created our designs](https://docs.google.com/document/d/1T8S4bTtX42IiN7-NCuHtfx58u-CFKKfx/edit?usp=sharing&ouid=115120354710465633047&rtpof=true&sd=true)
+- [Link to our Database Schema](https://www.figma.com/file/Yc6wSiRK9RwBwcHFr8ZqcM/cms-schema?node-id=0%3A1T)
+- [Link to our Presentation video](https://drive.google.com/file/d/1LUQruvH3ZXqwkxbltWtDIqWfstui_EBc/view?usp=sharing)
+- [Link to our Presentation slides](https://www.figma.com/file/Uli9IZeFBp4ZlCe46ui6dI/CMS?node-id=1000%3A2167)
