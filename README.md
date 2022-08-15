@@ -11,6 +11,16 @@
 Web-It is a web application that helps users create, customize, manage, and modify content on a website without the need for specialized technical knowledge. In simpler words, it is a content management system that helps you build a website without needing to write all the code from scratch (or even know how to code at all).
 This application is aimed at helping bloggers and companies with little or no knowledge on how to create a website, create their own websites, depending on the use case. It is built on top of the Django framework
 
+## Table of Contents
+
+* [Links to necessary documentations](#links-to-necessary-documentations)
+* [Introduction](#introduction)
+* [Features](#features)
+* [Technologies Used](#technologies-used)
+* [Prerequisite](#prerequisite)
+* [Setup and Instatllation](#setup-and-installation)
+* 
+
 ## Links to necessary documentations
 
 - [Link to our Documentation](https://docs.google.com/document/d/1QcRuKKh-H820re8t0NY9Rf9wGXVA_yY7LYIW_ivLpyY/edit?usp=sharing)
