@@ -21,6 +21,7 @@ This application is aimed at helping bloggers and companies with little or no kn
 6. [Setup and Instatllation](#setup-and-installation)
 7. [How To Contribute](#how-to-contribute)
 8. [Acknowlodgement](#acknowledgement)
+9. [Authors](#authors)
 
 ## Links to necessary documentations
 
