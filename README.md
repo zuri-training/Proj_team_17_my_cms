@@ -76,14 +76,14 @@ git clone https://github.com/zuri-training/Proj_team_17_my_cms.git
 - Ensure you have MySQL installed for the database
 - You would be required to create a password during the installation of MySQL
 - Go into the **settings.py** file in the **Backend/web_maker/web_maker/** diectory, edit the **PASSWORD** in the **DATABASES** to the password you created when installing MYSQL
+- i.e
 ```sh
-i.e.
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'webit',
         'USER': 'root',
-        'PASSWORD': '**your-created-password**',
+        'PASSWORD': 'your-created-password',
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'OPTIONS': {
