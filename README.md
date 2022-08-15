@@ -20,7 +20,7 @@ This application is aimed at helping bloggers and companies with little or no kn
 5. [Prerequisite](#prerequisite)
 6. [Setup and Instatllation](#setup-and-installation)
 7. [How To Contribute](#how-to-contribute)
-8. [Acknolodgement](#acknowledgement)
+8. [Acknowlodgement](#acknowledgement)
 
 ## Links to necessary documentations
 
