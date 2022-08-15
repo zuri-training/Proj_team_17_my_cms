@@ -17,7 +17,7 @@ This application is aimed at helping bloggers and companies with little or no kn
 2. [Introduction](#introduction)
 3. [Features](#features)
 4. [Technologies Used](#technologies-used)
-5. [Prerequisite](#prerequisit)
+5. [Prerequisite](#Prerequisite)
 6. [Setup and Instatllation](#setup-and-installation) 
 
 ## Links to necessary documentations
