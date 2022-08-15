@@ -18,7 +18,9 @@ This application is aimed at helping bloggers and companies with little or no kn
 3. [Features](#features)
 4. [Technologies Used](#technologies-used)
 5. [Prerequisite](#prerequisite)
-6. [Setup and Instatllation](#setup-and-installation) 
+6. [Setup and Instatllation](#setup-and-installation)
+7. [How To Contribute](#how-to-contribute)
+8. [Acknolodgement](#acknowledgement)
 
 ## Links to necessary documentations
 
@@ -94,7 +96,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'webit',
         'USER': 'root',
-        'PASSWORD': 'your-created-password',
+        'PASSWORD': '<your-created-password>',
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'OPTIONS': {
@@ -113,3 +115,27 @@ DATABASES = {
 - Next, run the command - `python manage.py migrate`
 - Run the server with - `python manage.py runserver`
 - Finally, go to `http://127.0.0.1:8000/` to see the web application
+
+## How To Contribute
+- Fork the project repository by clicking on the **fork symbol** at the top right corner of the page
+- Clone the forked repository on your local machine -
+```sh
+git clone https://github.com/zuri-training/Proj_team_17_my_cms.git
+```
+- Move into the repository (folder) just created on your local machine
+- Set upstream - 
+```sh
+git remote add https://github.com/zuri-training/Proj_team_17_my_cms.git
+```
+- Craete and move to a new branch to make your changes -
+```sh
+git checkout -b <name-of-your-new-branch>
+```
+- Stage the files you made changes to - `git add <name-of-file>`
+- Commit your changes with a message - `git commit -m "your-message"`
+- Push your changes to your forked repository - `git push -u origin <name-of-your-new-branch>`
+- Create a pull request on GitHub for your changes to be reviewed
+- Wait for one of the administrators to review your pull request and merge
+
+## Acknowledgement
+We would like to thank Ingressive For Good & the Zuri Team for this training and for everything that was put in place to make this a success. We have been pushed to do a lot during the course of this training, especially during this project phase. We are grateful for this opportunity that was given to learn, grow and also coonect with other amazing designers, developers and mentors.
