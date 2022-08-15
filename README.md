@@ -127,7 +127,7 @@ git clone https://github.com/zuri-training/Proj_team_17_my_cms.git
 ```sh
 git remote add https://github.com/zuri-training/Proj_team_17_my_cms.git
 ```
-- Craete and move to a new branch to make your changes -
+- Create and move to a new branch to make your changes -
 ```sh
 git checkout -b <name-of-your-new-branch>
 ```
