@@ -49,7 +49,8 @@ class PasswordResetEmailViewSerializer(serializers.ModelSerializer):
             print('Encoded UID', uid)
             token = PasswordResetTokenGenerator().make_token(user)
             print('Password Reset Token', token)
-            link = 'http://localhost:3000/api/reset/'+uid+'/'+token
+            # https://web-maker.herokuapp.com http://localhost:3000
+            link = 'https://web-maker.herokuapp.com/api/reset-password/'+uid+'/'+token
             print('Password Reset Link', link)
             # Send Email
             body = 'Click the link to reset your password '+link
