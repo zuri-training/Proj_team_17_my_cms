@@ -36,7 +36,7 @@ urlpatterns = [
     path('Templates', views.index),
     path('domian-new-user', views.index),
     path('domian-existing-user', views.index),
-    path('api/reset-password/<uid>/<token>', views.index),
+    
 
     
 
