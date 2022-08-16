@@ -5,8 +5,9 @@ import signup from '../assets/img/pana.svg';
 import { Link, useNavigate } from "react-router-dom";
 import { useRegisterUserMutation } from "../services/userAuthApi";
 import { storeToken } from "../services/LocalStorageService";
-import google from '../assets/img/download-4-removebg-preview 1.png'
-import apple from '../assets/img/image 1.png'
+import google from '../assets/img/download-4-removebg-preview 1.png';
+import apple from '../assets/img/image 1.png';
+import WebIt from './../assets/img/WebIt-logo.png';
 
 
 const SignUp = () => {
@@ -56,98 +57,106 @@ const SignUp = () => {
 
   return (
     <div className="h-screen session-bg">
-      <div className=" mt-10  flex">
-      <div className="w-1/2">
-        <div className="flex items-center justify-center flex-col">
+      <div className='w-40 h-20 colorbtn-bg inline-flex items-center justify-center rounded-2xl mt-8 ml-8'>
+        <Link to="/" className='flex items-center cursor-pointer m-auto'>
+          <img  src={WebIt} alt="logo" className=''/>
+          <h2 className='text-base text-white px-2.5 font-bold'>WebIt</h2>
+        </Link>
+      </div>
+
+      <div className=" mt-14 flex">
+        <div className="w-1/2">
+          <div className="flex items-center justify-center flex-col">
         
-          <form onSubmit={handleSubmit}>
-        <h1 className=" mb-12  font-semibold overflow-hidden text-4xl color1">Sign Up</h1>
-        {server_error && <p className='text-center text-red-600'>{server_error}</p>}
-            <div className="w-[481] mb-6 ">
-              <label htmlFor="name-input" className=" font-medium block mb-2 text-sm  text-black dark:text-gray-300">Name</label>
-              <input
-                type="text"
-                id="name-input"
-                value={name}
-                onChange={({ target: { value } }) => setName(value)}
-                placeholder="John Doe"
-                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12" 
-                required
-              />
-            </div>
-            <div className="w-[481px] mb-6">
-              <label htmlFor="userName" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Username</label>
-              <input
-                type="text"
-                id="usern-input"
-                value={username}
-                onChange={({ target: { value } }) => setUsername(value)}
-                placeholder="johndoe"
-                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12" 
-                required
-              />
-            </div>
-            <div className=" w-[481px] mb-6">
-              <label htmlFor="email" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Email</label>
-              <input
-                type="email"
-                id="email-input"
-                value={email}
-                onChange={({ target: { value } }) => setEmail(value)}
-                placeholder="johndoe@example.com"
-                className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12" 
-                required
-              />
-              <p className="hidden peer-invalid:visible text-red-700 font-light">
-                  Please enter a valid email address
-              </p>
-            </div>
-            <div className="w-[481px] mb--6 mx-auto relative">
-              <div className="w-full">
-                <label htmlFor="password" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Password</label>
+            <form onSubmit={handleSubmit}>
+              <h1 className=" mb-12 font-semibold overflow-hidden text-4xl color1">Sign Up</h1>
+              {server_error && <p className='text-center text-red-600'>{server_error}</p>}
+              <div className="w-[481] mb-6 ">
+                <label htmlFor="name-input" className=" font-medium block mb-2 text-sm  text-black dark:text-gray-300">Name</label>
                 <input
-                  type={open === false ? "password" : "text"}
-                  id="passw-input"
-                  value={password}
-                  onChange={({ target: { value } }) => setPassword(value)}
-                  placeholder="*********"
-                  className="h-12 rounded-md mb-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-gray-500 block w-full p-2.5 pr-12" 
+                  type="text"
+                  id="name-input"
+                  value={name}
+                  onChange={({ target: { value } }) => setName(value)}
+                  placeholder="John Doe"
+                  className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12" 
                   required
                 />
               </div>
-
-              <div className="absolute top-10 right-5">
-                {open === false ? (
-                  <FontAwesomeIcon icon={faEye} onClick={toggle} />
-                ) : (
-                  <FontAwesomeIcon icon={faEyeSlash} onClick={toggle} />
-                )}
+              <div className="w-[481px] mb-6">
+                <label htmlFor="userName" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Username</label>
+                <input
+                  type="text"
+                  id="usern-input"
+                  value={username}
+                  onChange={({ target: { value } }) => setUsername(value)}
+                  placeholder="johndoe"
+                  className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12" 
+                  required
+                />
               </div>
-            </div>
+              <div className=" w-[481px] mb-6">
+                <label htmlFor="email" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Email</label>
+                <input
+                  type="email"
+                  id="email-input"
+                  value={email}
+                  onChange={({ target: { value } }) => setEmail(value)}
+                  placeholder="johndoe@example.com"
+                  className=" h-12 rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm  focus:ring-gray-500 block w-full p-2.5 pr-12" 
+                  required
+                />
+                <p className="hidden peer-invalid:visible text-red-700 font-light">
+                    Please enter a valid email address
+                </p>
+              </div>
+              <div className="w-[481px] mb--6 mx-auto relative">
+                <div className="w-full">
+                  <label htmlFor="password" className="block mb-2 text-sm font-medium  text-black dark:text-gray-300">Password</label>
+                  <input
+                    type={open === false ? "password" : "text"}
+                    id="passw-input"
+                    value={password}
+                    onChange={({ target: { value } }) => setPassword(value)}
+                    placeholder="*********"
+                    className="h-12 rounded-md mb-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-gray-500 block w-full p-2.5 pr-12" 
+                    required
+                  />
+                </div>
 
-            <button disabled={loading} type="submit" className="colorbtn-bg rounded-md font-semibold w-[481px] h-12 bg-gray-400 mt-6 flex items-center justify-center">Sign Up</button>
-          </form>
-        
-          <div className="flex items-center justify-center flex-col">
-            <div className="pt-3">
-              <p>Already have an account? <Link to="/login">Log In</Link></p>
-            </div>
+                <div className="absolute top-10 right-5">
+                  {open === false ? (
+                    <FontAwesomeIcon icon={faEye} onClick={toggle} />
+                  ) : (
+                    <FontAwesomeIcon icon={faEyeSlash} onClick={toggle} />
+                  )}
+                </div>
+              </div>
 
-           <p className="mt-8 mb-8">OR</p>
+              <button disabled={loading} type="submit" className="colorbtn-bg rounded-md font-semibold w-[481px] h-12 bg-gray-400 mt-6 flex items-center justify-center">Sign Up</button>
+            </form>
         
-            <div className="mb-12">
-              <p className="mb-3">continue with:</p>
-              <div className="flex items-center gap-9">
-                <img className="w-8 h-8" src={google} alt='icn1' />
-                <img className="w-8 h-8" src={apple} alt='icn1' />
+            <div className="flex items-center justify-center flex-col">
+              <div className="pt-3">
+                <p>Already have an account? <Link to="/login">Log In</Link></p>
+              </div>
+
+             <p className="mt-8 mb-8">OR</p>
+        
+              <div className="mb-12">
+                <p className="mb-3">continue with:</p>
+                <div className="flex items-center gap-9">
+                  <img className="w-8 h-8" src={google} alt='icn1' />
+                  <img className="w-8 h-8" src={apple} alt='icn1' />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="mt-20">
-        <img src={signup} alt="sign up img" />
-      </div>
+
+        <div className="mt-20">
+          <img src={signup} alt="sign up img" />
+        </div>
       </div>
     </div>
     
