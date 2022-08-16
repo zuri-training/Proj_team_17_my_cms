@@ -12,13 +12,9 @@ import TemplatesPage from "./pages/TemplatesPage";
 import AboutUs from "./pages/AboutUs";
 import FeedBackPage from "./pages/FeedBackPage";
 import Error from "./pages/Error";
-<<<<<<< HEAD:Frontend/src/App.js
-
-import { useSelector } from 'react-redux';
-=======
 import ResetPassword from "./pages/ResetPassword";
-import { useSelector } from 'react-redux'
->>>>>>> c53333cd9722cf026004336565d67a6456b5feca:Backend/web_maker/src/App.js
+import { useSelector } from 'react-redux';
+import WebBuilder from "./pages/WebBuilder";
 
 
 
@@ -38,9 +34,10 @@ function App() {
         <Route path="/feedback-hub" element={<FeedBackPage />} />
         <Route path="/domian-new-user" element={<DomainNewUser />} />
         <Route path="/domian-existing-user" element={<DomainExistingUser />} />
-        <Route path="/Templates" element={<TemplatesPage />} />
+        <Route path="/templates" element={<TemplatesPage />} />
 
-      
+        <Route path="/customize" element={<WebBuilder />} />
+
         <Route path="*" element={<Error/>} />
       </Routes>
     </>

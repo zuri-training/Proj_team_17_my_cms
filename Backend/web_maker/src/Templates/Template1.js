@@ -82,7 +82,7 @@ const Template1 = () => {
 
         <div className='w-full h-96 px-5 bg-[#F3E5E8] mt-24'>
             <img className='pt-12 pl-20 mb-16' src={frame} alt='frame' />
-            <Link to='/template1' className='bg-[#402A2E] rounded font-medium text-white relative left-[46%] my-12 py-3 px-6'>Customize Template</Link>
+            <Link to='/customize' className='bg-[#402A2E] rounded font-medium text-white relative left-[46%] my-12 py-3 px-6'>Customize Template</Link>
         </div>
         
     </>
