@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from datetime import timedelta
 from pathlib import Path
+from socket import timeout
+from threading import TIMEOUT_MAX
 from decouple import config
 import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -100,27 +102,32 @@ WSGI_APPLICATION = 'web_maker.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'webit',
-        'USER': 'root',
-        'PASSWORD': 'Epi=phany2',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-        'OPTIONS': {
-           'charset' : 'utf8',
-            'use_unicode' : True,
-             'init_command': 'SET '
-                'character_set_connection=utf8,'
-                'collation_connection=utf8_bin',
-        }, 
-        'TEST_CHARSET': 'utf8,',
-        'TEST_COLLATION': 'utf8_unicode_ci',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'webit',
+#         'USER': 'root',
+#         'PASSWORD': 'Epi=phany2',
+#         'HOST': '127.0.0.1',
+#         'PORT': '3306',
+#         'OPTIONS': {
+#            'charset' : 'utf8',
+#             'use_unicode' : True,
+#              'init_command': 'SET '
+#                 'character_set_connection=utf8,'
+#                 'collation_connection=utf8_bin',
+#         }, 
+#         'TEST_CHARSET': 'utf8,',
+#         'TEST_COLLATION': 'utf8_unicode_ci',
+#     }
+# }
 
 
 
@@ -173,13 +180,15 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 AUTH_USER_MODEL = 'accounts.User'
 
-# Email Configuration
+# Email Configuration 587
 EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 EMAIL_USE_TLS = True
+
+
 
 
 # JWT Settings

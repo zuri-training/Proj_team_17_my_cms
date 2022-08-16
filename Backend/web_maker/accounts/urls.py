@@ -28,13 +28,16 @@ urlpatterns = [
     path('faq', views.index),
     path('contact-us', views.index),
     path('docs', views.index),
-    path('feedback-hub', views.index),
     path('terms-of-service', views.index),
     path('privacy-policy', views.index),
     path('twitter', views.index),
     path('facebook', views.index),
     path('linkedin', views.index),
     path('Templates', views.index),
+    path('domian-new-user', views.index),
+    path('domian-existing-user', views.index),
+    path('api/reset-password/<uid>/<token>', views.index),
+
     
 
     
