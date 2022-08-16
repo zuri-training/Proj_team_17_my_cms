@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='h-full flex flex-row justify-around items-center max-w-5xl my-0 mx-auto'>
             <div className='mx-auto flex flex-col justify-start h-44 items-start'>
                 <h4 className='font-bold text-xl not-italic pb-2 inline-flex'>Products</h4>
-                <Link to="/editor"><p className='pb-1 inline-flex font-medium text-xl'>Editor</p></Link>
+                <Link to="/customize"><p className='pb-1 inline-flex font-medium text-xl'>Editor</p></Link>
                 <Link to="/blog"><p className='pb-1 inline-flex font-medium text-xl'>Blog</p></Link>
                 <Link to="/cms"><p className='pb-1 inline-flex font-medium text-xl'>CMS</p></Link>
             </div>
