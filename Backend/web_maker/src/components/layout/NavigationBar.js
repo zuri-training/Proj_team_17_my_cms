@@ -38,7 +38,7 @@ const NavigationBar = () => {
                             Features
                             <FontAwesomeIcon icon={faCaretDown} className='text-white px-3' />
     { show1 === false ? null :  <div className='absolute w-auto py-4 px-2 text-black bg-white rounded-lg mt-4 w-32'>
-                                    <Link to='' className='block text-sm mb-2 hover:bg-slate-300 transition-all rounded-lg text-center'>WebIt Templates</Link>
+                                    <Link to='/templates' className='block text-sm mb-2 hover:bg-slate-300 transition-all rounded-lg text-center'>WebIt Templates</Link>
                                     <Link to='' className='block text-sm hover:bg-slate-300 transition-all rounded-lg text-center'>WebIt Blog</Link>
                                 </div>}
                         </div>
