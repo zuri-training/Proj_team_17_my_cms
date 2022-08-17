@@ -13,6 +13,9 @@ from  .models import ContactUs, Template, Feedback
 
 
 
+
+
+
 # Create your views here.
 # The index view, which is the view that leads to the first page of the site.
 def index(request):
