@@ -30,12 +30,11 @@ function App() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="dashboard" element={access_token ? <DashBoard/> : <Navigate to='/login' />} />
         <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/api/reset-password/<uid>/<token>" element={<ResetPassword />} />
+        <Route path="/api/reset-password/:uid/:token" element={<ResetPassword />} />
         <Route path="/feedback-hub" element={<FeedBackPage />} />
         <Route path="/domian-new-user" element={<DomainNewUser />} />
         <Route path="/domian-existing-user" element={<DomainExistingUser />} />
         <Route path="/templates" element={<TemplatesPage />} />
-
         <Route path="/customize" element={<WebBuilder />} />
 
         <Route path="*" element={<Error/>} />
